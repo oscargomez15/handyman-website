@@ -22,7 +22,7 @@ export const Footer = () => {
         </div>
 
         <div className="socials footer-section">
-          <h2>Get in touch</h2>
+          <h2>Contact</h2>
           <ul className='footer-list'>
             <li>
               <a href="https://www.facebook.com/GIALServices/" target='_blank'> <AiOutlineFacebook size="md"/> </a>

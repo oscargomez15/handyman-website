@@ -9,6 +9,7 @@
 html{
   scroll-behavior: smooth;
 }
+
 body{
   background-image: linear-gradient(to bottom, #da3349 0%, #ff7272 100%);
   font-family: 'Montserrat', sans-serif;
@@ -32,7 +33,7 @@ body{
   margin: auto;
 }
 
-.service-page{
+.service-page, .hero-page{
   min-height: calc(100vh - 2rem);
 }
 
@@ -132,7 +133,7 @@ ul li a{
 /* Hero Styling */
 .content{
   display: flex;
-  height: calc(100% - 136px);
+  height: calc(100vh - 136px);
 
   align-items: center;
   justify-content: space-around;
@@ -514,5 +515,23 @@ form label{
 
   .contact-btn{
     width: 75%;
+  }
+
+  .footer-content{
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .footer-logo img{
+    width: 100%;
+  }
+
+  .footer-icon{
+    display: none;
+  }
+
+  .copyright{
+    text-align: center;
   }
 }
