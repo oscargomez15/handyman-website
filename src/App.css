@@ -27,10 +27,13 @@ body{
 
 .page{
   padding-top: 3rem;
-  min-height: calc(100vh - 2rem);
   position: relative;
   width: 70%;
   margin: auto;
+}
+
+.service-page{
+  min-height: calc(100vh - 2rem);
 }
 
 .page::after{
@@ -216,9 +219,6 @@ ul li a{
   justify-content: center;
 }
 
-.service-page{
-  padding-top: 0rem;
-}
 
 .services-content{
   display: flex;
@@ -417,6 +417,60 @@ form label{
     padding: .5rem;
   }
 
+  nav{
+    display: none;
+  }
+
+  .hero-page{
+    height: 100vh;
+    align-items: center;
+  }
+
+  .content{
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    gap: 0;
+  }
+
+  .image-container img{
+    height: 90%;
+    object-fit: cover;
+    border-radius: 0;
+    display: block;
+  }
+
+  .text-container{
+    gap: 0.5rem;
+  }
+
+  .text-container .heading{
+    font-size: 2rem;
+    line-height: 1.8rem;
+  }
+
+  .text-container p{
+    font-size: 1rem;
+  }
+
+  .btn-group{
+    width: 70%;
+    gap: 1rem;
+    flex-direction: column;
+    flex: 1;
+    margin: auto;
+  }
+
+  .btn-group a{
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .btn-group button{
+    margin-top: 0;
+    width: 100%;
+    font-size: 1rem;
+  }
+
   .services-content{
     flex-direction: column;
   }
@@ -427,8 +481,12 @@ form label{
     object-fit: contain;
   }
 
-  .services-content .sub-heading h1{
+  .page .sub-heading h1{
     font-size: 2rem;
+  }
+
+  .page .sub-heading p{
+    font-size: 1rem;
   }
 
   .services-list{
@@ -446,10 +504,15 @@ form label{
   .contact-page form{
     width: 80%;
   }
+
   .fields-group{
     flex-direction: column;
     align-items: flex-start;
     gap: 0;
     display: block;
+  }
+
+  .contact-btn{
+    width: 75%;
   }
 }
