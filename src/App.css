@@ -31,10 +31,11 @@ body{
   position: relative;
   width: 70%;
   margin: auto;
+  padding-bottom: 4rem;
 }
 
 .service-page, .hero-page{
-  min-height: calc(100vh - 2rem);
+  min-height: calc(100dvh - 2rem);
 }
 
 .page::after{
@@ -57,7 +58,14 @@ nav{
   color: white;
   border-radius:25px;
   transition: all .2s ease;
+}
+
+.nav-desktop{
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.hamburger-menu{
+  display: none;
 }
 
 .contact-nav{
@@ -133,7 +141,7 @@ ul li a{
 /* Hero Styling */
 .content{
   display: flex;
-  height: calc(100vh - 136px);
+  height: calc(100dvh - 136px);
 
   align-items: center;
   justify-content: space-around;
@@ -272,7 +280,6 @@ ul li a{
 
 .review-page{
   height: fit-content;
-  padding-bottom: 4rem;
 }
 
 .widget-container{
@@ -363,7 +370,6 @@ footer{
 
 .contact-page{
   height: fit-content;
-  padding-bottom: 4rem;
 }
 
 .contact-page form{
@@ -418,12 +424,65 @@ form label{
     padding: .5rem;
   }
 
-  nav{
+  .nav-desktop{
     display: none;
   }
 
+  .background-wrapper{
+    position: relative;
+  }
+
+  .hamburger-menu{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100dvh;
+    z-index: 2;
+  }
+
+  .menu-icon{
+    font-size: 3rem;
+    cursor: pointer;
+    position: absolute;
+    color: rgb(88, 88, 88);
+    padding: 1rem 0 0 1.2rem;
+    z-index: 3;
+  }
+
+  .hamburger-content{
+    position: absolute;
+    top: 0;
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+  }
+
+  .hamburger-content.open{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .hamburger-content ul::before{
+    content: '';
+    width: 100%;
+    height: .2rem;
+    background-color: rgb(240, 240, 240);
+    position: absolute;
+  }
+
+  .hamburger-content ul{
+    position: relative;
+  }
+
+  .hamburger-content ul li{
+    display: block;
+    font-size: 3rem;
+  }
+
   .hero-page{
-    height: 100vh;
+    height: 100dvh;
     align-items: center;
   }
 
@@ -517,10 +576,18 @@ form label{
     width: 75%;
   }
 
+  footer{
+    gap: 2rem 0;
+  }
+
   .footer-content{
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 2rem;
+  }
+
+  .footer-section{
+    padding-left: 1rem;
   }
 
   .footer-logo img{

@@ -15,7 +15,7 @@ export const Navigation = () => {
     window.addEventListener('scroll', handleScroll)
   })
   return (
-    <nav className={`${isSticky ? 'sticky-nav' : ''}`}>
+    <nav className={`${isSticky ? 'sticky-nav' : ''} nav-desktop`}>
         <header>
             <img src={logo} alt="gial-logo" />
         </header>
