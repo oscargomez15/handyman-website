@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa';
 import logo from '../Assets/gial-logo-footer.png'
 
@@ -8,8 +8,20 @@ export const Hamburger = () => {
     const handleClick = () => {
         setOpen(!isOpen);
     }
+
+    useEffect( () => {
+        if(isOpen){
+            document.body.classList.add('no-scroll')
+        }else{
+            document.body.classList.remove('no-scroll')
+        }
+
+        return () => {
+            document.body.classList.remove('no-scroll')
+        }
+    },[isOpen])
   return (
-    <div className="hamburger-menu">
+    <div className='hamburger-menu'>
         <div className="menu-icon" onClick={handleClick}>
             {isOpen ? <FaTimes/> : <FaBars/>}
         </div>

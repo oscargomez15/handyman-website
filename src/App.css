@@ -464,6 +464,10 @@ form label{
     justify-content: flex-start;
   }
 
+  .no-scroll{
+    overflow: hidden;
+  }
+
   .hamburger-content ul::before{
     content: '';
     width: 100%;
