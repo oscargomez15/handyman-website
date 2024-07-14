@@ -150,6 +150,7 @@ ul li a{
 .text-container{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -388,12 +389,14 @@ footer{
 .fields-group{
   display: flex;
   align-items: center;
-  gap: 2rem;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .form-field{
   display: flex;
   flex-direction: column;
+  max-width: 50%;
 }
 
 form input{
@@ -425,7 +428,11 @@ form label{
   background-color: #ebb462;
 }
 
-@media screen and (max-width:1200px)  {
+@media screen and (max-width: 1780px) {
+
+}
+
+@media screen and (max-width:1380px)  {
   body{
     padding: .5rem;
   }
@@ -455,7 +462,7 @@ form label{
     cursor: pointer;
     position: absolute;
     color: #ebb462;
-    padding: 1rem 0 0 1.2rem;
+    padding: 2rem 0 0 3rem;
     z-index: 3;
   }
 
@@ -590,8 +597,12 @@ form label{
   .fields-group{
     flex-direction: column;
     align-items: flex-start;
-    gap: 0;
     display: block;
+    width: 100%;
+  }
+
+  .form-field{
+    max-width: 100%;
   }
 
   .contact-btn{
@@ -603,9 +614,12 @@ form label{
   }
 
   .footer-content{
-    flex-direction: column;
     align-items: flex-start;
     gap: 2rem;
+  }
+
+  .footer-logo, .footer-section{
+    flex: 1;
   }
 
   .footer-section{
@@ -622,5 +636,26 @@ form label{
 
   .copyright{
     text-align: center;
+  }
+}
+
+@media screen and (max-width:1070px) {
+  .hero-page .content .text-container .heading{
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .btn-group{
+    justify-content: center;
+  }
+
+  .footer-content{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width:540px) {
+  .menu-icon{
+    padding: 1rem 0 0 1.2rem;
   }
 }
