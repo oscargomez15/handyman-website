@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/handyman-website/static/css/main.c5a0601e.css",
+    "main.css": "/handyman-website/static/css/main.e06b3a2f.css",
     "main.js": "/handyman-website/static/js/main.e2871e69.js",
     "static/media/toolbox.png": "/handyman-website/static/media/toolbox.1fb3f21d57673010933c.png",
     "static/media/handyman.jpg": "/handyman-website/static/media/handyman.f0c08b26a52ba380f7ac.jpg",
     "static/media/gial-logo.png": "/handyman-website/static/media/gial-logo.0dd4ca2b1581b3117755.png",
     "static/media/gial-logo-footer.png": "/handyman-website/static/media/gial-logo-footer.9d2544d4b4b4177a5e1c.png",
     "index.html": "/handyman-website/index.html",
-    "main.c5a0601e.css.map": "/handyman-website/static/css/main.c5a0601e.css.map",
+    "main.e06b3a2f.css.map": "/handyman-website/static/css/main.e06b3a2f.css.map",
     "main.e2871e69.js.map": "/handyman-website/static/js/main.e2871e69.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5a0601e.css",
+    "static/css/main.e06b3a2f.css",
     "static/js/main.e2871e69.js"
   ]
 }
