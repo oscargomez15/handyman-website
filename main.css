@@ -193,7 +193,6 @@ ul li a{
 }
 
 .quote-btn, .learn-more-btn{
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 1rem 1.5rem;
@@ -281,7 +280,6 @@ ul li a{
 /* Reviews Styling */
 
 .review-page{
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -373,7 +371,6 @@ footer{
 /* Contact Styling */
 
 .contact-page{
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -504,8 +501,7 @@ form label{
 
   .image-container img{
     height: 90%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     border-radius: 0;
     display: block;
   }
@@ -548,11 +544,9 @@ form label{
 
   .services-content .sub-heading img{
     width: 100%;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
 
   .page .sub-heading h1{
