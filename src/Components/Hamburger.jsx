@@ -20,8 +20,9 @@ export const Hamburger = () => {
             document.body.classList.remove('no-scroll')
         }
     },[isOpen])
+
   return (
-    <div className='hamburger-menu'>
+    <div className={`${isOpen ? 'hamburger-open' : ''} hamburger-menu`}>
         <div className="menu-icon" onClick={handleClick}>
             {isOpen ? <FaTimes/> : <FaBars/>}
         </div>
@@ -30,10 +31,10 @@ export const Hamburger = () => {
                 <img src={logo} alt="" />
             </header>
             <ul>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Services</li>
-                <li>Contact Us</li>
+                <a href="#home" onClick={() => {setOpen(false)}}><li>Home</li></a>
+                <a href=""><li>About Us</li></a>
+                <a href="#services" onClick={()=> {setOpen(false)}}><li>Services</li></a>
+                <a href="#contact" onClick={()=> {setOpen(false)}}><li>Contact Us</li></a>
             </ul>
         </nav>
     </div>
