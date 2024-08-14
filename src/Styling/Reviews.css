@@ -1,0 +1,10 @@
+.review-page{
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .widget-container{
+    display: flex;
+    padding-top: 5rem;
+  }

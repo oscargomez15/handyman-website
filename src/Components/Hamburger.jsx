@@ -28,11 +28,11 @@ export const Hamburger = () => {
         </div>
         <nav className={`hamburger-content ${isOpen ? 'open':''}`}>
             <header>
-                <img src={logo} alt="" />
+                <img src={logo} alt="gial-logo" />
             </header>
             <ul>
                 <a href="#home" onClick={() => {setOpen(false)}}><li>Home</li></a>
-                <a href=""><li>About Us</li></a>
+                <a href="#"><li>About Us</li></a>
                 <a href="#services" onClick={()=> {setOpen(false)}}><li>Services</li></a>
                 <a href="#contact" onClick={()=> {setOpen(false)}}><li>Contact Us</li></a>
             </ul>

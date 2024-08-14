@@ -1,0 +1,239 @@
+.background-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .25;
+    z-index: 0;
+  }
+  
+  .hero-page{
+    width: 100%;
+    position: relative;
+  }
+
+  .hero-page::after{
+    height: 0;
+  }
+  
+  .hero-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    z-index: 4;
+    width: 100%;
+    height: 100dvh;
+  }
+  
+  .content{
+    display: flex;
+    height: calc(100dvh - 136px);
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .hero-page .content{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    justify-content: center;
+  }
+  
+  .hero-page .heading{
+    text-align: center;
+  }
+  
+  .text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100dvh;
+    text-align: center;
+    z-index: 2;
+  }
+  
+  .text-container .heading{
+    font-size: 4.5rem;
+    line-height: 80px;
+    color: white;
+  }
+  
+  .text-container .heading span{
+    color: #e09f3e;
+  }
+  
+  .text-container p {
+    font-size: 1.5rem;
+    color: white;
+  }
+  
+  .text-container, .image-container{
+    flex: 1;
+  }
+  
+  .text-container span{
+    font-weight: bold;
+    color: #e09f3e;
+  }
+  
+  .image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-container img{
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+  
+  .btn-group{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .learn-more-btn{
+    background-color: transparent;
+    border: 2px solid #e09f3e;
+    color: #e09f3e;
+  }
+  
+  .learn-more-btn:hover{
+    color: white;
+  }
+
+@media screen and (max-width:1380px) {
+    .nav-desktop{
+        display: none;
+      }
+    
+      .background-wrapper{
+        position: relative;
+      }
+    
+      .hamburger-menu{
+        display: block;
+      }
+    
+      .hamburger-open{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100dvh;
+        z-index: 2;
+      }
+    
+      .menu-icon{
+        font-size: 3rem;
+        cursor: pointer;
+        position: absolute;
+        color: #ebb462;
+        padding: 2rem 0 0 3rem;
+        z-index: 3;
+      }
+    
+      .hamburger-content{
+        position: absolute;
+        top: 0;
+        border-radius: 0;
+        height: 100%;
+        width: 100%;
+        display: none;
+        background-color: rebeccapurple;
+        z-index: 5;
+      }
+
+      .hamburger-content.open{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+
+      .no-scroll{
+        overflow: hidden;
+      }
+
+      .hamburger-content ul::before{
+        content: '';
+        width: 100%;
+        height: .2rem;
+        background-color: rgb(240, 240, 240);
+        position: absolute;
+      }
+
+      .hamburger-content ul{
+        position: relative;
+      }
+
+      .hamburger-content ul li{
+        display: block;
+        font-size: 3rem;
+      }
+
+      .hamburger-content ul a{
+        text-decoration: none;
+      }
+
+      .hero-page{
+        position: relative;
+        height: 100dvh;
+        align-items: center;
+      }
+
+      .content{
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        gap: 0;
+      }
+
+      .text-container{
+        gap: 0.5rem;
+        width: 90%;
+      }
+
+      .text-container .heading{
+        font-size: 2rem;
+        line-height: 1.8rem;
+      }
+
+      .text-container p{
+        font-size: 1rem;
+      }
+
+      .btn-group{
+        width: 70%;
+        gap: 1rem;
+        flex-direction: column;
+        justify-content: start;
+        margin: 0 auto;
+      }
+
+      .btn-group a{
+        width: 100%;
+        font-size: 1rem;
+      }
+
+      .btn-group button{
+        margin-top: 0;
+        width: 100%;
+        font-size: 1rem;
+      }
+}
+
+@media screen and (max-width:1070px) {
+    .hero-page .content .text-container .heading{
+        font-size: 3rem;
+        line-height: 3rem;
+      }
+      .btn-group{
+        justify-content: center;
+      }
+}

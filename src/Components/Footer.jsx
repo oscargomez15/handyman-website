@@ -2,6 +2,7 @@ import React from 'react'
 import logo from '../Assets/gial-logo-footer.png'
 import { IoIosHammer, IoLogoGoogle } from 'react-icons/io'
 import { AiOutlineFacebook } from 'react-icons/ai'
+import '../Styling/Footer.css'
 
 export const Footer = () => {
   return (
@@ -17,6 +18,7 @@ export const Footer = () => {
             <li> <a href="#home">Home</a></li>
             <li><a href="">About Us</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#reviews">Reviews</a></li>
             <li><a href="#contact">Contact us</a></li>
           </ul>
         </div>
@@ -25,9 +27,9 @@ export const Footer = () => {
           <h2>Contact</h2>
           <ul className='footer-list'>
             <li>
-              <a href="https://www.facebook.com/GIALServices/" target='_blank'> <AiOutlineFacebook size="md"/> </a>
+              <a href="https://www.facebook.com/GIALServices/" target='_blank' rel='noreferrer'> <AiOutlineFacebook size="md"/> </a>
             </li>
-            <li><a href="https://maps.app.goo.gl/nScSNDEyUSUgrR8q9" target='_blank'>
+            <li><a href="https://maps.app.goo.gl/nScSNDEyUSUgrR8q9" target='_blank' rel='noreferrer'>
               <IoLogoGoogle size="md"/></a>
             </li>
             <li><a href=""></a></li>

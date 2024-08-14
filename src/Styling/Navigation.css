@@ -1,0 +1,87 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0;
+    margin-top: 3rem;
+    color: white;
+    transition: all .2s ease;
+    z-index: 2;
+  }
+  
+  .nav-desktop{
+    position: fixed;
+    width: 90%;
+    z-index: 999;
+  }
+  
+  .hamburger-menu{
+    display: none;
+  }
+  
+  .contact-nav{
+    background-color: #e09f3e;
+    padding: .5rem 1.5rem;
+    border-radius: 10px;
+    transition: all .2s ease;
+  }
+  
+  .contact-nav::after{
+    background-color: transparent;
+  }
+  
+  .contact-nav:hover{
+    background-color: #f8c06b;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  
+  header img{
+    height: 100px;
+  }
+  
+  ul{
+    list-style: none;
+  }
+  
+  ul a{
+    color: white;
+  }
+  
+  ul li{
+    display: inline-block;
+    margin-right: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    padding: .25rem 0;
+    font-size: 1.3rem;
+  }
+  
+  ul li::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background-color: rgb(255, 230, 230);
+    transition: opacity 0.5s ease;
+    opacity: 0;
+  }
+  
+  ul li:hover::after{
+    width: 100%;
+    opacity: 1;
+  }
+
+  ul li a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .sticky-nav{
+    margin-top: 0;
+    width: 100%;
+    border-radius: 0;
+    z-index: 99;
+    background-color: #da3349;
+  }

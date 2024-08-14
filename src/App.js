@@ -5,18 +5,18 @@ import { Reviews } from './Pages/Reviews';
 import { Footer } from './Components/Footer';
 import { Contact } from './Pages/Contact';
 import { Hamburger } from './Components/Hamburger';
+import { WhyUs } from './Components/WhyUs';
 
 function App() {
   return (
     <div className='background-wrapper'>
-    <Hamburger/>
-      <div className="foreground">
-        <Hero/>
-        <Services/>
-        <Reviews/>
-        <Contact/>
-        <Footer/>
-      </div>
+      <Hamburger/>
+      <Hero/>
+      <Services/>
+      <WhyUs/>
+      <Reviews/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 }

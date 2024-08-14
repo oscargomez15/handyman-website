@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import emailjs from 'emailjs-com'
+import '../Styling/Contact.css'
 
 export const Contact = () => {
     const defaultFormValues = {
         fname:'',
         lname:'',
         address:'',
+        email:'',
         phone:'',
         message:''
     }
@@ -59,11 +61,14 @@ export const Contact = () => {
                 <label htmlFor="address">Full Address</label>
                 <input type="text" name='address' id='address' value={form.address} onChange={handleChange} required/>
 
+                <label htmlFor="email">Email</label>
+                <input type="text" name='email' id='email' value={form.phone} onChange={handleChange} required/>
+
                 <label htmlFor="phone">Phone Number</label>
                 <input type="text" name='phone' id='phone' value={form.phone} onChange={handleChange} required/>
 
                 <label htmlFor="message">Message</label>
-                <textarea id="message" name="message" value={form.message} onChange={handleChange} required></textarea>
+                <textarea id="message" name="message" value={form.message} onChange={handleChange} rows='10' placeholder='Write more about what you need done...' required></textarea>
 
                 <button className='contact-btn' type="submit" onClick={handleSubmit}> Send Message </button>
             </form>
