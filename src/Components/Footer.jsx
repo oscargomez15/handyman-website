@@ -12,32 +12,34 @@ export const Footer = () => {
           <img src={logo} alt="logo" />
         </div>
 
-        <div className="site-map footer-section">
-          <h2>Sitemap</h2>
-          <ul className='footer-list'>
-            <li> <a href="#home">Home</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#reviews">Reviews</a></li>
-            <li><a href="#contact">Contact us</a></li>
-          </ul>
-        </div>
+        <div className='footer-info'>
+          <div className="site-map footer-section">
+            <h2>Sitemap</h2>
+            <ul className='footer-list'>
+              <li> <a href="#home">Home</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#reviews">Reviews</a></li>
+              <li><a href="#contact">Contact us</a></li>
+            </ul>
+          </div>
 
-        <div className="socials footer-section">
-          <h2>Contact</h2>
-          <ul className='footer-list'>
-            <li>
-              <a href="https://www.facebook.com/GIALServices/" target='_blank' rel='noreferrer'> <AiOutlineFacebook size="md"/> </a>
-            </li>
-            <li><a href="https://maps.app.goo.gl/nScSNDEyUSUgrR8q9" target='_blank' rel='noreferrer'>
-              <IoLogoGoogle size="md"/></a>
-            </li>
-            <li><a href=""></a></li>
-          </ul>
+          <div className="socials footer-section">
+            <h2>Contact</h2>
+            <p className='phone-contact'>
+              <span>English</span> <a href='tel:+17867736209'>(786)773-6209</a> <br/>
+              <span>Spanish</span> <a href="tel:+17867507518">(786)750-7518</a> </p>
 
-          <p className='phone-contact'>
-            <span>English</span> <a href='tel:+17867736209'>(786)773-6209</a> <br/>
-            <span>Spanish</span> <a href="tel:+17867507518">(786)750-7518</a> </p>
+              <ul className='footer-list'>
+              <li>
+                <a href="https://www.facebook.com/GIALServices/" target='_blank' rel='noreferrer'> <AiOutlineFacebook size="md"/> </a>
+              </li>
+              <li><a href="https://maps.app.goo.gl/nScSNDEyUSUgrR8q9" target='_blank' rel='noreferrer'>
+                <IoLogoGoogle size="md"/></a>
+              </li>
+              <li><a href=""></a></li>
+            </ul>
+          </div>
         </div>
 
         <div className="footer-icon">

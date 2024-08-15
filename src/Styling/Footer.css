@@ -4,7 +4,6 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    width: 70%;
     margin: auto;
     padding: 3rem 0;
     background-color: #474747;
@@ -17,7 +16,10 @@ footer{
     display: flex;
     justify-content: space-around;
   }
-  
+  .footer-info{
+    display: flex;
+  }
+
   .footer-section{
     display: flex;
     flex-direction: column;
@@ -77,11 +79,19 @@ footer{
   @media screen and (max-width:1380px) {
     footer{
         gap: 2rem 0;
+        width: 100%;
+        border-radius: 0;
       }
     
       .footer-content{
         align-items: flex-start;
         gap: 2rem;
+      }
+
+      .footer-info{
+        display: flex;
+        justify-content: center;
+        width: 100%;
       }
     
       .footer-logo, .footer-section{
