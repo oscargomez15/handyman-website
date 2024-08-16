@@ -33,10 +33,11 @@ export const Hamburger = () => {
             <FaBars/>
         </div>
 
-        <motion.div className="exit-overlay" animate={{translateX: isOpen ? 0 : -900}} transition={{duration:1}}onClick={() => setOpen(!isOpen)}></motion.div>
+        <motion.div className="exit-overlay" initial={{translateX:-900}} animate={{translateX: isOpen ? 0 : -900}} transition={{duration:1}}onClick={() => setOpen(!isOpen)}></motion.div>
 
         <motion.nav
         className='hamburger-content'
+        initial={{translateX:-800}}
         animate={{translateX: isOpen ? 0 : -800}}
         transition={{duration:.5, ease:"easeInOut"}}>
             <FaTimes className='exit-icon' onClick={handleClick}/>

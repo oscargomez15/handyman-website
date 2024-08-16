@@ -24,8 +24,8 @@ export const Navigation = () => {
 
         <ul>
             <li><a href="#home">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
             <li><a href="#services">SERVICES</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
             <li><a href="#reviews">REVIEWS</a></li>
             <a href="#contact"><li className='contact-nav'>CONTACT</li>
             <li><a href="tel:7867507518"> Free Estimates <br/><FaPhone/> 786-750-7518</a></li></a>

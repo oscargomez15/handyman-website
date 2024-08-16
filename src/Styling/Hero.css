@@ -81,7 +81,10 @@
   
   .text-container span{
     font-weight: bold;
-    color: #da3349;
+  }
+
+  .text-container p span{
+    text-decoration: underline;
   }
   
   .image-container{
