@@ -95,3 +95,13 @@ nav{
     text-decoration: none;
     color: white;
   }
+
+  .exit-icon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    z-index: 999;
+    height: 25px;
+    width: 25px;
+  }

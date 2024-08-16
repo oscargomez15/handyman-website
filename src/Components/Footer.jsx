@@ -28,7 +28,10 @@ export const Footer = () => {
             <h2>Contact</h2>
             <p className='phone-contact'>
               <span>English</span> <a href='tel:+17867736209'>(786)773-6209</a> <br/>
-              <span>Spanish</span> <a href="tel:+17867507518">(786)750-7518</a> </p>
+              <span>Spanish</span> <a href="tel:+17867507518">(786)750-7518</a> <br/>
+              <a href="email:gialservices@gmail.com">gialservices@gmail.com</a>
+            </p>
+
 
               <ul className='footer-list'>
               <li>

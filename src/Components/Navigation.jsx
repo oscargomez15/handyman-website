@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import logo from '../Assets/logo-gial.png'
 import '../Styling/Navigation.css'
+import { FaPhone } from 'react-icons/fa';
 
 export const Navigation = () => {
   const [isSticky, setSticky] = useState(false);
@@ -26,7 +27,8 @@ export const Navigation = () => {
             <li><a href="#">ABOUT</a></li>
             <li><a href="#services">SERVICES</a></li>
             <li><a href="#reviews">REVIEWS</a></li>
-            <a href="#contact"><li className='contact-nav'>CONTACT</li></a>
+            <a href="#contact"><li className='contact-nav'>CONTACT</li>
+            <li><a href="tel:7867507518"> Free Estimates <br/><FaPhone/> 786-750-7518</a></li></a>
         </ul>
     </nav>
   )

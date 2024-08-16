@@ -1,0 +1,21 @@
+
+.gallery-page{
+    padding: 3rem 0;
+}
+
+.gallery-container{
+    padding-top: 3rem;
+    height: 500px;
+}
+
+.swiper-container{
+    display: flex;
+    height: 100%;
+    background-color: rgb(240, 240, 240);
+}
+
+.gallery-container img{
+    height: 100%;
+    flex: 1;
+    object-fit: cover; 
+}

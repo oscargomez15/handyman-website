@@ -4,6 +4,7 @@ import '../Styling/Services.css'
 import { motion } from 'framer-motion'
 import { MdOutlineCleaningServices, MdOutlineWindow, MdOutlineWaterDrop, 
   MdOutlineFormatPaint, MdOutlineHomeRepairService, MdOutlinePlumbing, MdOutlineElectricalServices } from 'react-icons/md'
+import { IoHammerOutline } from 'react-icons/io5'
 
 export const Services = () => {
   const servicesInfo = [{
@@ -34,6 +35,10 @@ export const Services = () => {
     title: <h2>Drywall <br/> Patch</h2>,
     description:"We specialize in repairing holes, dents, and imperfections in drywall.",
     icon:<MdOutlineHomeRepairService size="md" className='service-icon' />
+},{
+  title: <h2> Demolition <br/> Work </h2>,
+  description:"Expert demolition services for safe and efficient removal of structures, walls, and debris.",
+  icon:<IoHammerOutline size="md" className='service-icon'/>
 }]
 
   return (
@@ -41,23 +46,7 @@ export const Services = () => {
         <div className="services-content">
             <div className="sub-heading">
                 <h1>The Services we provide <span>for our customers</span></h1>
-                {/* <img src={toolbox} alt="toolbox" /> */}
             </div>
-            {/* <div className="services-list">
-            {servicesInfo.map ((service,id) => {
-              return (
-                <div className={`service-${id} service-item`} key={id}>
-                  <div className="icon-container">
-                    {service.icon}
-                  </div>
-                  <div className="service-text">
-                    <h2>{service.title}</h2>
-                    <p>{service.description}</p>
-                  </div>
-                </div>
-              )
-            })}
-            </div> */}
 
             <div className="services-list">
             {servicesInfo.map ((service,id) => {
@@ -66,7 +55,7 @@ export const Services = () => {
                 className={`service-${id} service-item`}
                 key={id}
                 initial={{scale:1,x:-20, opacity:0}}
-                whileHover={{scale:1.1, cursor:'pointer'}}
+                whileHover={{scale:1.1}}
                 whileInView={{x:0,opacity:1}}
                 transition={{
                   x:{duration:id*0.5}

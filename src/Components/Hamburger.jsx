@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { FaBars, FaPhone, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import logo from '../Assets/gial-logo-footer.png'
 import { IoHammerOutline, IoHomeOutline, IoInformationCircleOutline } from 'react-icons/io5';
 import { MdOutlineComment } from 'react-icons/md';
 import { RiStarSLine } from 'react-icons/ri';
-import { easeInOut, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 export const Hamburger = () => {
     const [isOpen, setOpen] = useState(false);
 
@@ -27,9 +27,10 @@ export const Hamburger = () => {
   return (
     <div className={`${isOpen ? 'hamburger-open' : ''} hamburger-menu`}>
         <div className="menu-icon" onClick={handleClick}>
-            {isOpen ? <FaTimes/> : <FaBars/>}
+            <FaBars/>
         </div>
         <nav className={`hamburger-content ${isOpen ? 'open':''}`}>
+            <FaTimes className='exit-icon' onClick={handleClick}/>
             <header>
                 <img src={logo} alt="gial-logo" />
             </header>

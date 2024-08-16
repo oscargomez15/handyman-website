@@ -140,12 +140,12 @@
       }
     
       .menu-icon{
-        font-size: 3rem;
+        font-size: 2rem;
         cursor: pointer;
         position: absolute;
-        color: #ebb462;
+        color: white;
         padding: 2rem 0 0 3rem;
-        z-index: 999;
+        z-index: 4;
       }
     
       .hamburger-content{
@@ -172,6 +172,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        position: relative;
       }
 
       .no-scroll{

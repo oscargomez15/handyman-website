@@ -62,7 +62,7 @@ export const Contact = () => {
                 <input type="text" name='address' id='address' value={form.address} onChange={handleChange} required/>
 
                 <label htmlFor="email">Email</label>
-                <input type="text" name='email' id='email' value={form.phone} onChange={handleChange} required/>
+                <input type="text" name='email' id='email' value={form.email} onChange={handleChange} required/>
 
                 <label htmlFor="phone">Phone Number</label>
                 <input type="text" name='phone' id='phone' value={form.phone} onChange={handleChange} required/>

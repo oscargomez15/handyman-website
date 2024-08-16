@@ -58,6 +58,13 @@
     z-index: 0;
 }
 
+.swiper-image{
+    padding: 3rem 0;
+    height: 1000px;
+    width: 100%;
+    object-fit: cover;
+}
+
 @media screen and (max-width:1380px) {
     .chooseus-wrapper{
         height: fit-content;

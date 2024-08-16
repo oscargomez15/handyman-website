@@ -6,6 +6,7 @@ import { Footer } from './Components/Footer';
 import { Contact } from './Pages/Contact';
 import { Hamburger } from './Components/Hamburger';
 import { WhyUs } from './Components/WhyUs';
+import { OurWork } from './Pages/OurWork';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Hamburger/>
       <Hero/>
       <Services/>
+      <OurWork/>
       <WhyUs/>
       <Reviews/>
       <Contact/>
