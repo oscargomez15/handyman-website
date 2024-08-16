@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/handyman-website/static/css/main.4bea4fdf.css",
-    "main.js": "/handyman-website/static/js/main.71f028b5.js",
+    "main.css": "/handyman-website/static/css/main.36eed6b6.css",
+    "main.js": "/handyman-website/static/js/main.922a2f12.js",
     "static/media/pressure-wash.jpg": "/handyman-website/static/media/pressure-wash.eac204848dbde765f777.jpg",
     "static/media/enhanced-drywall.png": "/handyman-website/static/media/enhanced-drywall.87c639044b5ba28cf574.png",
     "static/media/ceiling-paint.jpg": "/handyman-website/static/media/ceiling-paint.1ba08804797de6aeedee.jpg",
@@ -22,11 +22,11 @@
     "static/media/gial-logo-footer.png": "/handyman-website/static/media/gial-logo-footer.9d2544d4b4b4177a5e1c.png",
     "static/media/logo-gial.png": "/handyman-website/static/media/logo-gial.e020d856e0fad10f1834.png",
     "index.html": "/handyman-website/index.html",
-    "main.4bea4fdf.css.map": "/handyman-website/static/css/main.4bea4fdf.css.map",
-    "main.71f028b5.js.map": "/handyman-website/static/js/main.71f028b5.js.map"
+    "main.36eed6b6.css.map": "/handyman-website/static/css/main.36eed6b6.css.map",
+    "main.922a2f12.js.map": "/handyman-website/static/js/main.922a2f12.js.map"
   },
   "entrypoints": [
-    "static/css/main.4bea4fdf.css",
-    "static/js/main.71f028b5.js"
+    "static/css/main.36eed6b6.css",
+    "static/js/main.922a2f12.js"
   ]
 }
