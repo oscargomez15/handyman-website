@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import logo from '../Assets/logo-gial.png'
 import '../Styling/Navigation.css'
-import { FaPhone } from 'react-icons/fa';
+import { FaBars, FaPhone } from 'react-icons/fa';
 
 export const Navigation = () => {
   const [isSticky, setSticky] = useState(false);

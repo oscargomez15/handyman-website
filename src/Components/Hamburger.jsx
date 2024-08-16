@@ -5,11 +5,14 @@ import { IoHammerOutline, IoHomeOutline, IoInformationCircleOutline } from 'reac
 import { MdOutlineComment } from 'react-icons/md';
 import { RiStarSLine } from 'react-icons/ri';
 import { motion } from 'framer-motion';
+import '../Styling/Navigation.css'
+
 export const Hamburger = () => {
     const [isOpen, setOpen] = useState(false);
 
     const handleClick = () => {
         setOpen(!isOpen);
+        console.log('Open')
     }
 
     useEffect( () => {
@@ -25,11 +28,17 @@ export const Hamburger = () => {
     },[isOpen])
 
   return (
-    <div className={`${isOpen ? 'hamburger-open' : ''} hamburger-menu`}>
+    <div className='hamburger-menu'>
         <div className="menu-icon" onClick={handleClick}>
             <FaBars/>
         </div>
-        <nav className={`hamburger-content ${isOpen ? 'open':''}`}>
+
+        <motion.div className="exit-overlay" animate={{translateX: isOpen ? 0 : -900}} transition={{duration:1}}onClick={() => setOpen(!isOpen)}></motion.div>
+
+        <motion.nav
+        className='hamburger-content'
+        animate={{translateX: isOpen ? 0 : -800}}
+        transition={{duration:.5, ease:"easeInOut"}}>
             <FaTimes className='exit-icon' onClick={handleClick}/>
             <header>
                 <img src={logo} alt="gial-logo" />
@@ -57,7 +66,7 @@ export const Hamburger = () => {
                 href='tel:7867507518'
                 className='cta-text'>Call now <br/>(786)750-7518</a>
             </motion.div>
-        </nav>
+        </motion.nav>
     </div>
 
   )

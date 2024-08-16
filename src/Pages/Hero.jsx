@@ -1,17 +1,20 @@
 import React from 'react'
 import handyman from '../Assets/handyman.jpg'
+import logo from '../Assets/logo-gial.png'
 import { Navigation } from '../Components/Navigation';
-import '../Styling/Hero.css'
 import { motion } from 'framer-motion';
+
+import '../Styling/Hero.css'
 
 export const Hero = () => {
 
   return (
     <section className='hero-page page' id='home'>
+    <img src={handyman} alt="man-standing-with-construction-belt" className='background-image' />
       <div className="hero-container">
-      <img src={handyman} alt="man-standing-with-construction-belt" className='background-image' />
         <Navigation/>
           <div className='text-container'>
+          <img src={logo} alt="" className='logo-hero-mb' />
             <motion.h1
             className='heading'
             initial={{scale:0.5}}

@@ -19,6 +19,10 @@ nav{
     display: none;
   }
   
+  .hambruger-content-wrapper{
+    height: 100dvh;
+  }
+  
   .contact-nav{
     background-color: #e09f3e;
     padding: .5rem 1.5rem;
@@ -105,3 +109,5 @@ nav{
     height: 25px;
     width: 25px;
   }
+
+  

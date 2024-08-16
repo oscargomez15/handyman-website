@@ -34,7 +34,9 @@
     align-items: center;
     justify-content: space-around;
   }
-  
+.logo-hero-mb{
+  display: none;
+}
   .hero-page .content{
     display: flex;
     align-items: center;
@@ -62,16 +64,10 @@
     font-size: 4.5rem;
     line-height: 80px;
     color: white;
-    background: linear-gradient(-45deg,
-    #e09f3e,#ebb462, white);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-
   }
   
   .text-container .heading span{
-    color: #e09f3e;
+    color: #da3349;
   }
   
   .text-container p {
@@ -85,7 +81,7 @@
   
   .text-container span{
     font-weight: bold;
-    color: #e09f3e;
+    color: #da3349;
   }
   
   .image-container{
@@ -117,9 +113,24 @@
   }
 
 @media screen and (max-width:1380px) {
+  .exit-overlay{
+    height: 100dvh;
+    width: 100%;
+    background-color: rgb(43, 43, 43);
+    z-index: 3;
+    position: absolute;
+    opacity: 0.8;
+  }
+
   nav{
     margin-top: 0;
+    justify-content: unset;
   }
+
+  .logo-hero-mb{
+    display: block;
+  }
+
     .nav-desktop{
         display: none;
       }
@@ -130,11 +141,16 @@
     
       .hamburger-menu{
         display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 3;
       }
     
       .hamburger-open{
         display: block;
-        position: absolute;
+        position: fixed;
         width: 100%;
         height: 100dvh;
       }
@@ -147,17 +163,18 @@
         padding: 2rem 0 0 3rem;
         z-index: 4;
       }
-    
+
       .hamburger-content{
-        position: absolute;
-        top: 0;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
         border-radius: 0;
         height: 100%;
         width: 75%;
-        display: none;
         background-color: rgb(54, 54, 54);
         z-index: 5;
       }
+
       .hamburger-content hr{
         appearance: none;
         border: none;
@@ -245,6 +262,10 @@
         font-size: 3rem;
         line-height: 3rem;
       }
+
+      .hamburger-menu{
+      }
+
       .btn-group{
         justify-content: center;
       }

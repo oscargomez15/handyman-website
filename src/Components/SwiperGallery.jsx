@@ -21,6 +21,7 @@ export const SwiperGallery = () => {
         modules={[Navigation, Pagination]}
         observer={true}
         observeParents={true}
+        loop={true}
         breakpoints={{
             1140: {
                 slidesPerView: 4
