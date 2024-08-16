@@ -1,18 +1,32 @@
 {
   "files": {
-    "main.css": "/handyman-website/static/css/main.e70241fb.css",
-    "main.js": "/handyman-website/static/js/main.d2156e83.js",
+    "main.css": "/handyman-website/static/css/main.4bea4fdf.css",
+    "main.js": "/handyman-website/static/js/main.67ff5ae8.js",
+    "static/media/pressure-wash.jpg": "/handyman-website/static/media/pressure-wash.eac204848dbde765f777.jpg",
+    "static/media/enhanced-drywall.png": "/handyman-website/static/media/enhanced-drywall.87c639044b5ba28cf574.png",
+    "static/media/ceiling-paint.jpg": "/handyman-website/static/media/ceiling-paint.1ba08804797de6aeedee.jpg",
     "static/media/toolbox.png": "/handyman-website/static/media/toolbox.1fb3f21d57673010933c.png",
+    "static/media/ceiling-patch.jpg": "/handyman-website/static/media/ceiling-patch.79489001d5d53560592b.jpg",
     "static/media/construction.jpg": "/handyman-website/static/media/construction.c7202b9217fdd380d650.jpg",
+    "static/media/door-jamb.JPG": "/handyman-website/static/media/door-jamb.149be9f3305e2dc01158.JPG",
+    "static/media/plumbing.JPG": "/handyman-website/static/media/plumbing.e1534f2f5befd9020cf5.JPG",
+    "static/media/insulation.JPG": "/handyman-website/static/media/insulation.5e3510b2bd66bea7acad.JPG",
+    "static/media/demolition.JPG": "/handyman-website/static/media/demolition.1e77283a18f4fa8632d4.JPG",
+    "static/media/ceiling-patch-3.JPG": "/handyman-website/static/media/ceiling-patch-3.d23d099ac94fc12c2d80.JPG",
     "static/media/handyman.jpg": "/handyman-website/static/media/handyman.f0c08b26a52ba380f7ac.jpg",
+    "static/media/ceiling-paint-nancy.jpg": "/handyman-website/static/media/ceiling-paint-nancy.5850eb9ee4b5affd4462.jpg",
+    "static/media/patch.JPG": "/handyman-website/static/media/patch.13083d83713f71426b9f.JPG",
+    "static/media/z.JPG": "/handyman-website/static/media/z.70722ae9a5ba3016478b.JPG",
+    "static/media/tv-mount.JPG": "/handyman-website/static/media/tv-mount.cbe12d6eaebfec637988.JPG",
+    "static/media/ceiling-patch-2.JPG": "/handyman-website/static/media/ceiling-patch-2.affbf4e44c50d1b6fe18.JPG",
     "static/media/gial-logo-footer.png": "/handyman-website/static/media/gial-logo-footer.9d2544d4b4b4177a5e1c.png",
     "static/media/logo-gial.png": "/handyman-website/static/media/logo-gial.e020d856e0fad10f1834.png",
     "index.html": "/handyman-website/index.html",
-    "main.e70241fb.css.map": "/handyman-website/static/css/main.e70241fb.css.map",
-    "main.d2156e83.js.map": "/handyman-website/static/js/main.d2156e83.js.map"
+    "main.4bea4fdf.css.map": "/handyman-website/static/css/main.4bea4fdf.css.map",
+    "main.67ff5ae8.js.map": "/handyman-website/static/js/main.67ff5ae8.js.map"
   },
   "entrypoints": [
-    "static/css/main.e70241fb.css",
-    "static/js/main.d2156e83.js"
+    "static/css/main.4bea4fdf.css",
+    "static/js/main.67ff5ae8.js"
   ]
 }
