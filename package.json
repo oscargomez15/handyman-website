@@ -10,6 +10,7 @@
     "autoprefixer": "^10.4.19",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^11.3.27",
+    "lodash.throttle": "^4.1.1",
     "lottie-react": "^2.4.0",
     "postcss": "^8.4.39",
     "postcss-cli": "^11.0.0",

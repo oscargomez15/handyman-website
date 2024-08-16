@@ -100,7 +100,6 @@
   
   .btn-group{
     display: flex;
-    width: 30%;
     justify-content: space-between;
     align-items: center;
   }
@@ -162,9 +161,9 @@
         font-size: 2rem;
         cursor: pointer;
         position: absolute;
-        color: white;
         padding: 2rem 0 0 3rem;
         z-index: 4;
+        transition: all .5s;
       }
 
       .hamburger-content{
@@ -241,7 +240,6 @@
       }
 
       .btn-group{
-        width: 70%;
         gap: 1rem;
         flex-direction: column;
         justify-content: start;
@@ -272,4 +270,12 @@
       .btn-group{
         justify-content: center;
       }
+}
+
+.scrolled{
+  color: #e09f3e;
+}
+
+.not-scrolled{
+  color: white;
 }

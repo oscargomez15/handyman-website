@@ -2,13 +2,15 @@ import React, { useEffect, useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa';
 import logo from '../Assets/gial-logo-footer.png'
 import { IoHammerOutline, IoHomeOutline, IoInformationCircleOutline } from 'react-icons/io5';
-import { MdOutlineComment } from 'react-icons/md';
+import { MdOutlineComment, MdOutlinePhotoSizeSelectActual } from 'react-icons/md';
 import { RiStarSLine } from 'react-icons/ri';
 import { motion } from 'framer-motion';
 import '../Styling/Navigation.css'
+import throttle from 'lodash.throttle';
 
 export const Hamburger = () => {
     const [isOpen, setOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
 
     const handleClick = () => {
         setOpen(!isOpen);
@@ -27,9 +29,26 @@ export const Hamburger = () => {
         }
     },[isOpen])
 
+    useEffect(()=> {
+        const handleScroll = () => {
+            const changePoint = 800;
+            const scrollPosition = window.scrollY;
+            setScrolled(scrollPosition > changePoint);
+        };
+
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll',handleScroll);
+        }
+    },[]);
+
   return (
     <div className='hamburger-menu'>
-        <div className="menu-icon" onClick={handleClick}>
+        <div
+        className={`menu-icon ${scrolled ? 'scrolled' : 'not-scrolled'}`}
+        onClick={handleClick}>
             <FaBars/>
         </div>
 
@@ -47,8 +66,8 @@ export const Hamburger = () => {
             <hr />
             <ul>
                 <a href="#home" onClick={() => {setOpen(false)}}><li><IoHomeOutline/>Home</li></a>
-                <a href="#"><li><IoInformationCircleOutline/> About Us</li></a>
                 <a href="#services" onClick={()=> {setOpen(false)}}><li> <IoHammerOutline/> Services</li></a>
+                <a href="#"><li><MdOutlinePhotoSizeSelectActual/>Gallery</li></a>
                 <a href="#reviews" onClick={()=> {setOpen(false)}}><li> <RiStarSLine/> Reviews</li></a>
                 <a href="#contact" onClick={()=> {setOpen(false)}}><li><MdOutlineComment/>Contact</li></a>
             </ul>
