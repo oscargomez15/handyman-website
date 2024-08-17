@@ -1,5 +1,4 @@
 import React from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'
 import { SwiperGallery } from '../Components/SwiperGallery'
 export const OurWork = () => {
   return (

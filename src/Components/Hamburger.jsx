@@ -6,7 +6,6 @@ import { MdOutlineComment, MdOutlinePhotoSizeSelectActual } from 'react-icons/md
 import { RiStarSLine } from 'react-icons/ri';
 import { motion } from 'framer-motion';
 import '../Styling/Navigation.css'
-import throttle from 'lodash.throttle';
 
 export const Hamburger = () => {
     const [isOpen, setOpen] = useState(false);

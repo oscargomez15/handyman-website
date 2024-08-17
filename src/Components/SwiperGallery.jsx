@@ -1,6 +1,5 @@
 import React from 'react'
 import '../Styling/Gallery.css'
-import { motion } from 'framer-motion';
 import { SwiperSlide, Swiper } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css'

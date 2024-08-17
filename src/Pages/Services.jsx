@@ -1,5 +1,4 @@
 import React from 'react'
-import toolbox from '../Assets/toolbox.png'
 import '../Styling/Services.css'
 import { motion } from 'framer-motion'
 import { MdOutlineCleaningServices, MdOutlineWindow, MdOutlineWaterDrop, 
