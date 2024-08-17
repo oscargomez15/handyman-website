@@ -74,6 +74,7 @@
     .whyus-reasons{
         flex-direction: column;
         gap: 3rem;
+        flex-wrap: wrap;
     }
 
     .chooseus-background{
