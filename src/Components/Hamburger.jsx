@@ -46,11 +46,13 @@ export const Hamburger = () => {
 
   return (
     <div className='hamburger-menu'>
-        <div
+        <motion.div
         className={`menu-icon ${scrolled ? 'scrolled' : 'not-scrolled'}`}
+        whileTap={{scale:0.9}}
+        transition={{duration:0.5}}
         onClick={handleClick}>
             <FaBars/>
-        </div>
+        </motion.div>
 
         <motion.div className="exit-overlay" initial={{translateX:-900}} animate={{translateX: isOpen ? 0 : -900}} transition={{duration:1}}onClick={() => setOpen(!isOpen)}></motion.div>
 

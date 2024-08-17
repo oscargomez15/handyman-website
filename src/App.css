@@ -80,9 +80,3 @@ button:hover{
     flex-direction: column;
   }
 }
-
-@media screen and (max-width:540px) {
-  .menu-icon{
-    padding: 1rem 0 0 1.2rem;
-  }
-}
