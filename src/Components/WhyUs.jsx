@@ -32,7 +32,7 @@ export const WhyUs = () => {
             <h2>Free <br/> Estimates</h2>
           </div>
         </div>
-        <img src={construction} alt="" className='chooseus-background'/>
+        <img src={construction} alt="man-drilling-screw" className='chooseus-background'/>
       </div>
     </section>
   )

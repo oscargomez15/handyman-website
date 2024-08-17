@@ -14,7 +14,7 @@ export const SwiperGallery = () => {
     <div className="gallery-container">
         {/* traversing the images in the folder to render them automatically. Adding new images to the files automatically adds them. */}
         <Swiper
-        slidesPerView={4}        
+        slidesPerView={4}
         navigation={true}
         pagination={true}
         modules={[Navigation, Pagination]}
@@ -50,18 +50,6 @@ export const SwiperGallery = () => {
                 )
             })}
         </Swiper>
-        {/* {imageFiles.map((image, id) => {
-            return(
-                <motion.img
-                src={image}
-                alt={`image-${id}`}
-                key={`image-${id}`}
-                initial={{opacity:0}}
-                whileInView={{opacity:1}}
-                whileHover={{boxShadow:'rgba(0, 0, 0, 0.16) 0px 1px 4px', cursor:'pointer', scale:1.1}}
-                transition={{duration:.5}} />
-            )
-        })} */}
     </div>
   )
 }

@@ -12,7 +12,7 @@ export const Hero = () => {
     <section className='hero-page page' id='home'>
     <img src={handyman} alt="man-standing-with-construction-belt" className='background-image' />
       <div className="hero-container">
-      <img src={logo} alt="" className='logo-hero-mb' />
+      <img src={logo} alt="gial-services-logo" className='logo-hero-mb' />
         <Navigation/>
           <div className='text-container'>
             <motion.h1
