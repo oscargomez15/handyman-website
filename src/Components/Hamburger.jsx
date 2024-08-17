@@ -53,13 +53,12 @@ export const Hamburger = () => {
             <FaBars/>
         </motion.div>
 
-        <motion.div className="exit-overlay" initial={{translateX:-900}} animate={{translateX: isOpen ? 0 : -900}} transition={{duration:1}}onClick={() => setOpen(!isOpen)}></motion.div>
+        <div
+        className={`exit-overlay ${isOpen ? 'hamburger-slide-in' : 'hamburger-slide-out'}`}
+        onClick={() => setOpen(!isOpen)}></div>
 
-        <motion.nav
-        className='hamburger-content'
-        initial={{translateX:-800}}
-        animate={{translateX: isOpen ? 0 : -800}}
-        transition={{duration:.5, ease:"easeInOut"}}>
+        <nav
+        className={`hamburger-content ${isOpen ? 'hamburger-slide-in' : 'hamburger-slide-out'}`}>
             <FaTimes className='exit-icon' onClick={handleClick}/>
             <header>
                 <img src={logo} alt="gial-logo" />
@@ -75,7 +74,7 @@ export const Hamburger = () => {
 
             <hr />
 
-            <motion.div
+            <div
             className="cta"
             whileInView={{scale:[1,1.1,1]}}
             transition={{
@@ -86,8 +85,8 @@ export const Hamburger = () => {
                 <a
                 href='tel:7867507518'
                 className='cta-text'>Call now <br/>(786)750-7518</a>
-            </motion.div>
-        </motion.nav>
+            </div>
+        </nav>
     </div>
 
   )

@@ -119,9 +119,18 @@
     height: 100dvh;
     width: 100%;
     background-color: rgb(43, 43, 43);
-    z-index: 3;
+    z-index: 4;
     position: absolute;
     opacity: 0.8;
+  }
+
+  .hamburger-slide-in{
+    transform: translateX(0);
+  }
+
+  .hamburger-slide-out{
+    transform: translateX(-900px);
+
   }
 
   nav{
@@ -184,6 +193,7 @@
         width: 75%;
         background-color: rgb(54, 54, 54);
         z-index: 5;
+        transition: all .5s;
       }
 
       .hamburger-content hr{
