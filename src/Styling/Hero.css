@@ -114,7 +114,20 @@
     color: white;
   }
 
+  .mb-cta{
+    display: none;
+  }
+
 @media screen and (max-width:1380px) {
+  .mb-cta{
+    display: block;
+  }
+
+  .mb-cta a{
+    color: white;
+    text-decoration: none;
+  }
+
   .exit-overlay{
     height: 100dvh;
     width: 100%;
@@ -140,7 +153,9 @@
 
   .logo-hero-mb{
     display: block;
-    width: 70%;
+    width: 50%;
+    padding-top: 1rem;
+    z-index: 2;
   }
 
     .nav-desktop{
@@ -250,8 +265,8 @@
       }
 
       .text-container .heading{
-        font-size: 2rem;
-        line-height: 1.8rem;
+        font-size: 3rem;
+        line-height: 2.8rem;
       }
 
       .text-container p{

@@ -49,7 +49,15 @@ export const Hamburger = () => {
         className={`menu-icon ${scrolled ? 'scrolled' : 'not-scrolled'}`}
         whileTap={{scale:0.9}}
         transition={{duration:0.5}}
-        onClick={handleClick}>
+        onClick={handleClick}
+        role='button'
+        aria-label='menu'
+        tabIndex="0"
+        onKeyDown={(e) => {
+            if(e.key == 'Enter' || e.key == ''){
+                handleClick();
+            }
+        }}>
             <FaBars/>
         </motion.div>
 
@@ -59,17 +67,27 @@ export const Hamburger = () => {
 
         <nav
         className={`hamburger-content ${isOpen ? 'hamburger-slide-in' : 'hamburger-slide-out'}`}>
-            <FaTimes className='exit-icon' onClick={handleClick}/>
+            <FaTimes
+            tabIndex={isOpen ? '0' : '-1'}
+            role='button'
+            aria-label='close-menu'
+            onKeyDown={(e) => {
+                if(e.key == 'Enter' || e.key ==''){
+                    handleClick();
+                }
+            }}
+            className='exit-icon'
+            onClick={handleClick}/>
             <header>
                 <img src={logo} alt="gial-logo" />
             </header>
             <hr />
             <ul>
-                <a href="#home" onClick={() => {setOpen(false)}}><li><IoHomeOutline/>Home</li></a>
-                <a href="#services" onClick={()=> {setOpen(false)}}><li> <IoHammerOutline/> Services</li></a>
-                <a href="#"><li><MdOutlinePhotoSizeSelectActual/>Gallery</li></a>
-                <a href="#reviews" onClick={()=> {setOpen(false)}}><li> <RiStarSLine/> Reviews</li></a>
-                <a href="#contact" onClick={()=> {setOpen(false)}}><li><MdOutlineComment/>Contact</li></a>
+                <a href="#home" tabIndex={isOpen ? '0' : '-1'} onClick={() => {setOpen(false)}}><li><IoHomeOutline/>Home</li></a>
+                <a href="#services" tabIndex={isOpen ? '0' : '-1'} onClick={()=> {setOpen(false)}}><li> <IoHammerOutline/> Services</li></a>
+                <a href="#gallery" tabIndex={isOpen ? '0' : '-1'} onClick={()=> {setOpen(false)}}><li><MdOutlinePhotoSizeSelectActual/>Gallery</li></a>
+                <a href="#reviews" tabIndex={isOpen ? '0' : '-1'} onClick={()=> {setOpen(false)}}><li> <RiStarSLine/> Reviews</li></a>
+                <a href="#contact" tabIndex={isOpen ? '0' : '-1'} onClick={()=> {setOpen(false)}}><li><MdOutlineComment/>Contact</li></a>
             </ul>
 
             <hr />
@@ -83,6 +101,7 @@ export const Hamburger = () => {
                 duration:2}}
             >
                 <a
+                tabIndex={isOpen ? '0':'-1'}
                 href='tel:7867507518'
                 className='cta-text'>Call now <br/>(786)750-7518</a>
             </div>

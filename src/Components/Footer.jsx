@@ -18,7 +18,7 @@ export const Footer = () => {
             <ul className='footer-list'>
               <h2>Sitemap</h2>
               <li> <a href="#home">Home</a></li>
-              <li><a href="">About Us</a></li>
+              <li><a href="#gallery">Gallery</a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="#reviews">Reviews</a></li>
               <li><a href="#contact">Contact us</a></li>
@@ -36,9 +36,9 @@ export const Footer = () => {
 
               <ul className='footer-list'>
               <li>
-                <a href="https://www.facebook.com/GIALServices/" target='_blank' rel='noreferrer'> <AiOutlineFacebook size="md"/> </a>
+                <a href="https://www.facebook.com/GIALServices/" aria-label='visit our facebook page' target='_blank' rel='noreferrer'> <AiOutlineFacebook size="md"/> </a>
               </li>
-              <li><a href="https://maps.app.goo.gl/nScSNDEyUSUgrR8q9" target='_blank' rel='noreferrer'>
+              <li><a href="https://maps.app.goo.gl/nScSNDEyUSUgrR8q9" aria-label='visit our google page'target='_blank' rel='noreferrer'>
                 <IoLogoGoogle size="md"/></a>
               </li>
               <li><a href=""></a></li>
@@ -49,8 +49,8 @@ export const Footer = () => {
           <div className="site-map footer-section footer-sitemap-desktop">
             <ul className='footer-list'>
               <h2>Sitemap</h2>
-              <li> <a href="#home">Home</a></li>
-              <li><a href="">About Us</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#gallery">Gallery</a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="#reviews">Reviews</a></li>
               <li><a href="#contact">Contact us</a></li>
@@ -69,9 +69,9 @@ export const Footer = () => {
 
               <ul className='footer-list'>
               <li>
-                <a href="https://www.facebook.com/GIALServices/" target='_blank' rel='noreferrer'> <AiOutlineFacebook size="md"/> </a>
+                <a href="https://www.facebook.com/GIALServices/" aria-label='visit our faceboook page' target='_blank' rel='noreferrer'> <AiOutlineFacebook size="md"/> </a>
               </li>
-              <li><a href="https://maps.app.goo.gl/nScSNDEyUSUgrR8q9" target='_blank' rel='noreferrer'>
+              <li><a href="https://maps.app.goo.gl/nScSNDEyUSUgrR8q9" aria-label='visit our google page' target='_blank' rel='noreferrer'>
                 <IoLogoGoogle size="md"/></a>
               </li>
               <li><a href=""></a></li>
