@@ -44,7 +44,7 @@ export const Services = () => {
     <section className='service-page page' id='services'>
         <div className="services-content">
             <div className="sub-heading">
-                <h1>The Services we provide <span>for our customers</span></h1>
+                <h1>The <span>services</span> we provide</h1>
             </div>
 
             <div className="services-list">

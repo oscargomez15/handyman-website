@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa';
 import logo from '../Assets/gial-logo-footer.png'
-import { IoHammerOutline, IoHomeOutline, IoInformationCircleOutline } from 'react-icons/io5';
+import { IoHammerOutline, IoHomeOutline } from 'react-icons/io5';
 import { MdOutlineComment, MdOutlinePhotoSizeSelectActual } from 'react-icons/md';
 import { RiStarSLine } from 'react-icons/ri';
 import { motion } from 'framer-motion';
@@ -54,7 +54,7 @@ export const Hamburger = () => {
         aria-label='menu'
         tabIndex="0"
         onKeyDown={(e) => {
-            if(e.key == 'Enter' || e.key == ''){
+            if(e.key === 'Enter' || e.key === ''){
                 handleClick();
             }
         }}>
@@ -72,7 +72,7 @@ export const Hamburger = () => {
             role='button'
             aria-label='close-menu'
             onKeyDown={(e) => {
-                if(e.key == 'Enter' || e.key ==''){
+                if(e.key === 'Enter' || e.key ===''){
                     handleClick();
                 }
             }}

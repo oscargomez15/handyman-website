@@ -9,7 +9,7 @@ export const Footer = () => {
     <footer>
       <div className="footer-content">
         <div className="footer-logo">
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo" loading='lazy'/>
         </div>
         {/* Footer to be displayed only on screens less than 1380px*/}
 
@@ -41,7 +41,6 @@ export const Footer = () => {
               <li><a href="https://maps.app.goo.gl/nScSNDEyUSUgrR8q9" aria-label='visit our google page'target='_blank' rel='noreferrer'>
                 <IoLogoGoogle size="md"/></a>
               </li>
-              <li><a href=""></a></li>
             </ul>
           </div>
         </div>
@@ -74,7 +73,6 @@ export const Footer = () => {
               <li><a href="https://maps.app.goo.gl/nScSNDEyUSUgrR8q9" aria-label='visit our google page' target='_blank' rel='noreferrer'>
                 <IoLogoGoogle size="md"/></a>
               </li>
-              <li><a href=""></a></li>
             </ul>
           </div>
 

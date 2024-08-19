@@ -53,7 +53,7 @@ export const Contact = () => {
                     </div>
 
                     <div className="form-field">
-                        <label htmlFor="last-name">Last Name</label>
+                        <label htmlFor="lname">Last Name</label>
                         <input type="text" name="lname" id='lname' value={form.lname} onChange={handleChange} required/>
                     </div>
                 </div>

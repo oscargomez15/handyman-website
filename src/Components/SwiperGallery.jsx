@@ -45,7 +45,8 @@ export const SwiperGallery = () => {
                         <img
                         src={image}
                         alt={`image-${id}`}
-                        key={`image-${id}`}/>
+                        key={`image-${id}`}
+                        loading='lazy'/>
                     </SwiperSlide>
                 )
             })}
