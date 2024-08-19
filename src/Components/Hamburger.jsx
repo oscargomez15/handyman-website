@@ -79,7 +79,7 @@ export const Hamburger = () => {
             className='exit-icon'
             onClick={handleClick}/>
             <header>
-                <img src={logo} alt="gial-logo" />
+                <img src={logo} alt="gial-logo" loading='lazy' />
             </header>
             <hr />
             <ul>
