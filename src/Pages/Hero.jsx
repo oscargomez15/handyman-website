@@ -1,6 +1,6 @@
 import React from 'react'
 import handyman from '../Assets/handyman.jpg'
-import logo from '../Assets/logo-gial.png'
+import logo from '../Assets/gial-alpha.png'
 import { Navigation } from '../Components/Navigation';
 import { motion } from 'framer-motion';
 
@@ -13,7 +13,6 @@ export const Hero = () => {
     <img src={handyman} alt="man-standing-with-construction-belt" className='background-image' />
       <div className="hero-container">
       <img src={logo} alt="gial-services-logo" className='logo-hero-mb' />
-        <Navigation/>
           <div className='text-container'>
             <motion.h1
             className='heading'

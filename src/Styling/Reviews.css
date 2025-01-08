@@ -2,6 +2,7 @@
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    padding: 6rem 0;
   }
 
   .widget-container{

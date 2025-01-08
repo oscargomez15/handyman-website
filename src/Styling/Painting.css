@@ -1,0 +1,297 @@
+.landing-hero{
+    padding-top: 156px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.card{
+    height: 100%;
+    border-radius: 10px;
+    padding: 6rem 4rem 0rem 4rem;
+    background-color: rgb(242, 243, 243);
+}
+
+.column{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 47%;
+    max-height: 75vh;
+}
+
+.column .column-sub{
+    margin-top: 2rem;
+}
+
+.column .column-sub h1{
+    line-height: 4rem;
+}
+
+
+.column span{
+    color:#da3349;
+}
+
+.column .column-sub p{
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.button-group{
+    align-items: center;
+    align-self: self-start;
+    width: 100%;
+}
+
+.column .paint-logos{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+}
+
+.column .paint-logos img{
+    max-width: 100%;
+    object-fit: contain;
+    width: 175px;
+}
+
+.column video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.video-column{
+    padding: 0;
+    height: 100%;
+}
+
+.landing-hero{
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-container{
+    width: 100%;
+    margin: 6rem 0;
+    padding-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.painting-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.item-card{
+    width: 40%;
+    background-color: rgb(231, 231, 231);
+    padding: 4rem 2rem;
+    min-height: 100%;
+    flex: 1 1 auto;
+}
+
+.item-card h1{
+    line-height: 3rem;
+}
+
+.item-card h2{
+    line-height: 3rem;
+}
+
+.color-consultation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(80% - 4rem);
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+
+}
+
+.faq{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 6rem;
+    margin-bottom: 6rem;
+}
+
+.questions-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0rem 4rem ;
+    width: 100%;
+}
+
+.questions-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    flex: 1 1 40%;
+}
+
+.questions-title{
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    background-color: rgb(228, 228, 228);
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    transition:  all .2s;
+}
+
+.accordion:hover{
+    cursor: pointer;
+    background-color: rgb(223, 223, 223);
+
+}
+
+.panel{
+    display: none;
+    transition: all .2s;
+}
+
+.questions-list{
+    padding-left: 1rem;
+}
+
+.question-item{
+    margin-top: 1rem;
+}
+
+.question{
+    font-weight: bold;
+}
+
+.section-title{
+    font-size: 4rem;
+}
+
+.section-subtitle{
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.section-subtitle span{
+    background-color: #da3349;
+    padding: .6rem 1rem;
+    color: white;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:1820px) {
+    .item-card h2{
+        line-height: 1.5rem;
+    }
+}
+@media screen and (max-width:1380px) {
+    .section-subtitle{
+        padding: 4rem 0 ;
+        text-align: center;
+    }
+
+    .card{
+        padding: 2rem;
+    }
+
+    .card:nth-child(2){
+        padding: 0;
+    }
+
+    .landing-hero{
+        padding: 2rem ;
+        height: 100vh;
+    }
+
+    .section-title{
+        font-size: 3rem;
+    }
+
+    .column .column-sub h1{
+        line-height: 3rem;
+    }
+
+    .column .column-sub p{
+        font-size: 1rem;
+    }
+    .column .paint-logos img{
+        height: 50px;
+    }
+    .column .paint-logos{
+        gap: .5rem;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:1350px) {
+    .column .paint-logos{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .page{
+        width: 100%;
+    }
+
+    .column .paint-logos{
+        gap: 1rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .column .paint-logos img{
+        width: 100px;
+        object-fit: contain;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .landing-hero{
+        flex-direction: column;
+        height: 100dvh;
+        overflow: hidden;
+    }
+
+    .column{
+        width: 100%;
+    }
+
+    video{
+        object-fit: cover;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .video-column video{
+        height: 100%;
+        width: 100%;
+    }
+
+    .painting-list{
+        width: 80%;
+    }
+
+    .item-card{
+        width: 50%;
+    }
+
+
+
+    .color-consultation{
+        width: 100% ;
+    }
+}

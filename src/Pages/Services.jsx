@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { MdOutlineCleaningServices, MdOutlineWindow, MdOutlineWaterDrop, 
   MdOutlineFormatPaint, MdOutlineHomeRepairService, MdOutlinePlumbing, MdOutlineElectricalServices } from 'react-icons/md'
 import { IoHammerOutline } from 'react-icons/io5'
+import { Link } from 'react-router'
 
 export const Services = () => {
   const servicesInfo = [{
@@ -21,7 +22,8 @@ export const Services = () => {
   },{
     title: <h2>Professional <br/> Painting</h2>,
     description:"Refreshing living spaces with vibrant colors indoors and enhancing curb appeal.",
-    icon:<MdOutlineFormatPaint size="md" className='service-icon'/>
+    icon:<MdOutlineFormatPaint size="md" className='service-icon'/>,
+    route: "/paint"
   },{
     title: <h2>Basic <br/> Plumbing</h2>,
     description:"Trust our skilled plumbers to handle your basic plumbing needs with efficiency and expertise.",
@@ -54,7 +56,7 @@ export const Services = () => {
                 className={`service-${id} service-item`}
                 key={id}
                 initial={{scale:1,x:-20, opacity:0}}
-                whileHover={{scale:1.1}}
+                whileHover={{scale:1.1, cursor:"pointer"}}
                 whileInView={{x:0,opacity:1}}
                 transition={{
                   x:{duration:id*0.5}
@@ -64,6 +66,7 @@ export const Services = () => {
                     {service.title}
                     <p>{service.description}</p>
                   </div>
+                  <Link to={service.route}><button> Learn more </button> </Link>
                 </motion.div>
               )
             })}

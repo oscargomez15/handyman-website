@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa';
-import logo from '../Assets/gial-logo-footer.png'
+import logo from '../Assets/gial-alpha.png'
 import { IoHammerOutline, IoHomeOutline } from 'react-icons/io5';
 import { MdOutlineComment, MdOutlinePhotoSizeSelectActual } from 'react-icons/md';
 import { RiStarSLine } from 'react-icons/ri';

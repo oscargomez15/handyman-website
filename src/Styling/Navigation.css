@@ -3,7 +3,6 @@ nav{
     align-items: center;
     justify-content: space-around;
     padding: 1rem 0;
-    margin-top: 3rem;
     color: white;
     transition: all .2s ease;
     z-index: 2;
@@ -11,10 +10,14 @@ nav{
   
   .nav-desktop{
     position: fixed;
-    width: 90%;
+    width: 100%;
     z-index: 999;
   }
-  
+
+  .coloredBackground{
+    background-color: #da3349;
+  }
+
   .hamburger-menu{
     display: none;
   }
@@ -40,7 +43,7 @@ nav{
   }
   
   header img{
-    height: 100px;
+    height: 120px;
   }
   
   ul{
@@ -77,11 +80,49 @@ nav{
     opacity: 1;
   }
 
+  ul li:hover ul.dropdown{
+    display: block;
+  }
+
   ul li a{
     text-decoration: none;
     color: white;
   }
-  
+
+  .dropdown{
+    position: absolute;
+    width: 300px;
+    z-index: 999;
+    display: none;
+    background-color: #da3349;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .dropdown li::after{
+    content: none;
+  }
+
+  .dropdown li{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    transition: all .2s ease;
+    border-bottom: 2px solid #b6273a;
+  }
+
+  .dropdown li:last-child{
+    border-bottom: none;
+  }
+
+  .dropdown li:hover{
+    background-color: #c92b40;
+  }
+
+  .dropdown li a{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
   .sticky-nav{
     margin-top: 0;
     width: 100%;

@@ -1,3 +1,8 @@
+
+.home-page:nth-child(-1){
+  background-color: red;
+}
+
 .background-image{
     position: absolute;
     top: 0;
@@ -58,6 +63,7 @@
     height: 100dvh;
     text-align: center;
     z-index: 2;
+    line-height: 2rem;
   }
   
   .text-container .heading{
@@ -84,7 +90,10 @@
   }
 
   .text-container p span{
-    text-decoration: underline;
+    border-radius: 5px;
+    background-color: #da3349;
+    color: white;
+    padding: .3rem;
   }
   
   .image-container{

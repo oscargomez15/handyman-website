@@ -4,11 +4,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@aws-sdk/client-lex-runtime-service": "^3.632.0",
+    "@aws-sdk/client-lex-runtime-v2": "^3.635.0",
+    "@aws-sdk/credential-provider-cognito-identity": "^3.632.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "autoprefixer": "^10.4.19",
     "aws-amplify": "^6.5.1",
+    "aws-sdk": "^2.1678.0",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^11.3.27",
     "lodash.throttle": "^4.1.1",
@@ -19,6 +23,7 @@
     "react-amplified": "^0.1.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
+    "react-router": "^7.1.1",
     "react-scripts": "5.0.1",
     "swiper": "^11.1.9",
     "web-vitals": "^2.1.4"

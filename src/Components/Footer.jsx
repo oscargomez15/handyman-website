@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../Assets/gial-logo-footer.png'
+import logo from '../Assets/gial-alpha.png'
 import { IoIosHammer, IoLogoGoogle } from 'react-icons/io'
 import { AiOutlineFacebook } from 'react-icons/ai'
 import '../Styling/Footer.css'
@@ -9,7 +9,7 @@ export const Footer = () => {
     <footer>
       <div className="footer-content">
         <div className="footer-logo">
-          <img src={logo} alt="logo" loading='lazy'/>
+          <img src={logo} alt="logo" loading='lazy' height="250px"/>
         </div>
         {/* Footer to be displayed only on screens less than 1380px*/}
 
@@ -62,7 +62,7 @@ export const Footer = () => {
               <h2>Contact</h2>
               <span>English</span> <a href='tel:+17867736209'>(786)773-6209</a> <br/>
               <span>Spanish</span> <a href="tel:+17867507518">(786)750-7518</a> <br/>
-              <a href="email:gialservices@gmail.com">gialservices@gmail.com</a>
+              <a href="email:gialservices@gmail.com">contact@gialservices.com</a>
             </p>
 
 

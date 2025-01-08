@@ -41,7 +41,7 @@ button:hover{
   margin: auto;
 }
 
-.background-wrapper > :not(:first-child):not(:nth-child(2)):not(:nth-child(4)){
+.background-wrapper > :not(:first-child):not(:nth-child(2)):not(:nth-child(4)):not(:nth-child(8)){
   padding: 3rem 0;
 }
 
@@ -58,6 +58,10 @@ button:hover{
   position: absolute;
   background-color: rgb(241, 241, 241);
 }
+
+.page:last-of-type::after{
+  content: none
+};
 
 /* Navbar Styling */
 
