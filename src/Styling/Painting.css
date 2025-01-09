@@ -262,8 +262,7 @@
 @media screen and (max-width:750px) {
     .landing-hero{
         flex-direction: column;
-        height: 100dvh;
-        overflow: hidden;
+        height: fit-content;
     }
 
     .column{
