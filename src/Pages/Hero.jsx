@@ -1,7 +1,6 @@
 import React from 'react'
 import handyman from '../Assets/handyman.jpg'
 import logo from '../Assets/gial-alpha.png'
-import { Navigation } from '../Components/Navigation';
 import { motion } from 'framer-motion';
 
 import '../Styling/Hero.css'
@@ -18,11 +17,11 @@ export const Hero = () => {
             className='heading'
             initial={{scale:0.5}}
             whileInView={{scale:1}}
-            transition={{duration:1}}><span>Transforming homes</span> in Lee, Charlotte and Collier County. </motion.h1>
+            transition={{duration:1}}><span>Providing Professional Handyman Services</span> in Lee and Collier County. </motion.h1>
             <motion.p
             initial={{opacity:0}}
             whileInView={{opacity:1}}
-            transition={{duration:1}}> Our expert handyman services bring quality craftsmanship to every project in <span>Cape Coral, Fort Myers, Port Charlotte, Punta Gorda, North Fort Myers, and Estero</span>. </motion.p>
+            transition={{duration:1}}> Our expert handyman services bring quality craftsmanship to every project in <span>Cape Coral, Fort Myers, Bonita Springs, and Estero</span>. </motion.p>
               <div className="btn-group">
               <a href="#contact"><button tabIndex='-1' className='quote-btn'>FREE ESTIMATES</button></a>
               <a href="#services"><button tabIndex='-1' className='learn-more-btn'>VIEW SERVICES</button></a>

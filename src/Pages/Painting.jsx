@@ -124,7 +124,7 @@ export const Painting = () => {
         <div className='landing-hero'>
             <div className="column card">
                 <div className="column-sub">
-                    <h1 className='section-title'> Transform your Space with our <span>Professional Painting Services</span></h1>
+                    <h1 className='section-title'> Transform your Space with our <span>Professional Painting Service</span></h1>
                     <p> Bring new life to your home or business with our professional 
                         painting services. From color consultations
                         to the final coat, we’re here to make your vision a reality. Get a free
@@ -145,7 +145,7 @@ export const Painting = () => {
 
             <div className="column video-column">
                 <video muted autoPlay loop>
-                    <source src={paintingVideo} />  
+                    <source src="https://oscargomez-webportfolio.s3.us-east-1.amazonaws.com/painting-hero.mp4" />  
                 </video>
             </div>
         </div>
