@@ -10,7 +10,8 @@ export const Services = () => {
   const servicesInfo = [{
     title: <h2>Residential <br/> Cleaning</h2>,
     description: "From deep cleaning to regular maintenance, we make your space shine!",
-    icon: <MdOutlineCleaningServices size="md-20" className='service-icon'/>
+    icon: <MdOutlineCleaningServices size="md-20" className='service-icon'/>,
+    route: "/cleaning"
   },{
     title: <h2>Window <br/> Cleaning</h2>,
     description: "Expert window cleaning services that leave your windows sparkling and streak-free.",
@@ -23,7 +24,7 @@ export const Services = () => {
     title: <h2>Professional <br/> Painting</h2>,
     description:"Refreshing living spaces with vibrant colors indoors and enhancing curb appeal.",
     icon:<MdOutlineFormatPaint size="md" className='service-icon'/>,
-    route: "/paint"
+    route: "/painting"
   },{
     title: <h2>Basic <br/> Plumbing</h2>,
     description:"Trust our skilled plumbers to handle your basic plumbing needs with efficiency and expertise.",

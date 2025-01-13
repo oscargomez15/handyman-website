@@ -83,8 +83,8 @@ export const Hamburger = () => {
             </header>
             <hr />
             <ul>
-                <a href="#home" tabIndex={isOpen ? '0' : '-1'} onClick={() => {setOpen(false)}}><li><IoHomeOutline/>Home</li></a>
-                <a href="#services" tabIndex={isOpen ? '0' : '-1'} onClick={()=> {setOpen(false)}}><li> <IoHammerOutline/> Services</li></a>
+                <a href="/" tabIndex={isOpen ? '0' : '-1'} onClick={() => {setOpen(false)}}><li><IoHomeOutline/>Home</li></a>
+                <a href="/#services" tabIndex={isOpen ? '0' : '-1'} onClick={()=> {setOpen(false)}}><li> <IoHammerOutline/> Services</li></a>
                 <a href="#gallery" tabIndex={isOpen ? '0' : '-1'} onClick={()=> {setOpen(false)}}><li><MdOutlinePhotoSizeSelectActual/>Gallery</li></a>
                 <a href="#reviews" tabIndex={isOpen ? '0' : '-1'} onClick={()=> {setOpen(false)}}><li> <RiStarSLine/> Reviews</li></a>
                 <a href="#contact" tabIndex={isOpen ? '0' : '-1'} onClick={()=> {setOpen(false)}}><li><MdOutlineComment/>Contact</li></a>
