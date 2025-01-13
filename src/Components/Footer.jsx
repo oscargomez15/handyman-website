@@ -28,9 +28,9 @@ export const Footer = () => {
           <div className="socials footer-section">
             <p className='phone-contact'>
               <h2>Contact</h2>
-              <span>English</span> <a href='tel:+17867736209'>(786)773-6209</a> <br/>
-              <span>Spanish</span> <a href="tel:+17867507518">(786)750-7518</a> <br/>
-              <a href="email:gialservices@gmail.com">gialservices@gmail.com</a>
+              <span>Phone: </span> <a href='tel:+12397773713'>(239)777-3713</a> <br/>
+              <span>Email: </span><a href="email:gialservices@gmail.com">contact@gialservices.com</a>
+              <span> Hablamos Español</span>
             </p>
 
 
@@ -60,8 +60,7 @@ export const Footer = () => {
           <div className="socials footer-section footer-socials-desktop">
             <p className='phone-contact'>
               <h2>Contact</h2>
-              <span>English</span> <a href='tel:+17867736209'>(786)773-6209</a> <br/>
-              <span>Spanish</span> <a href="tel:+17867507518">(786)750-7518</a> <br/>
+              <span>English</span> <a href='tel:+12397773713'>(239)777-3713</a> <br/>
               <a href="email:gialservices@gmail.com">contact@gialservices.com</a>
             </p>
 

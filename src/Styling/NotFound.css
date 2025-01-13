@@ -1,0 +1,11 @@
+.not-found-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-found-btn{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}

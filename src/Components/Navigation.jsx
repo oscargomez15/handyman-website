@@ -10,7 +10,7 @@ import { IoHammerOutline } from 'react-icons/io5';
 export const Navigation = () => {
   const [isSticky, setSticky] = useState(false);
   const location = useLocation();
-  const isPaintingPage = location.pathname === '/paint';
+  const isPaintingPage = location.pathname !== '/';
 
   useEffect(() => {
     // Scroll to top whenever the route changes
@@ -39,7 +39,7 @@ export const Navigation = () => {
             <li>
               <a href="#services">SERVICES <IoIosArrowDown size="20"/></a>
               <ul className='dropdown'>
-                <li> <a href=""> <MdOutlineCleaningServices/> Residential Cleaning  </a></li>
+                <li> <a href="/cleaning"> <MdOutlineCleaningServices/> Residential Cleaning  </a></li>
                 <li> <a href=""> <MdOutlineWindow/> Window Cleaning</a>  </li>
                 <li> <a href=""> <MdOutlineWaterDrop/> Pressure Wash</a>  </li>
                 <li> <a href="/paint"> <MdOutlineFormatPaint/> Painting </a> </li>
@@ -53,7 +53,7 @@ export const Navigation = () => {
             <li><a href="#gallery">GALLERY</a></li>
             <li><a href="#reviews">REVIEWS</a></li>
             <li className='contact-nav'><a href="#contact">CONTACT</a></li>
-            <li><a href="tel:7867507518"> Free Estimates <br/><FaPhone/> 786-750-7518</a></li>
+            <li><a href="tel:7867507518"> Free Estimates <br/><FaPhone/> 239-777-3713</a></li>
         </ul>
     </nav>
   )

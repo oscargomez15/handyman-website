@@ -1,18 +1,16 @@
 import React from 'react'
 import { Navigation } from '../Components/Navigation'
 import '../Styling/Painting.css'
-import paintingVideo from '../Assets/painting-hero.mp4'
-import sw from '../Assets/sw-logo.png'
-import bm from '../Assets/bm-logo.webp'
-import behr from '../Assets/behr-logo.png'
-import { MdOutlineSensorDoor} from "react-icons/md"
 import { IoHomeOutline } from "react-icons/io5";
-import { GiWoodBeam } from "react-icons/gi";
+import { MdCleaningServices } from "react-icons/md";
 import { PiWall } from "react-icons/pi";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { Contact } from './Contact'
+import { HiOutlineOfficeBuilding } from "react-icons/hi";
+import { FaPeopleCarryBox } from "react-icons/fa6";
 
-export const Painting = () => {
+
+export const Cleaning = () => {
     const generalQuestions = [
         {
             question: "What types of painting services do you offer?",
@@ -124,38 +122,29 @@ export const Painting = () => {
         <div className='landing-hero'>
             <div className="column card">
                 <div className="column-sub">
-                    <h1 className='section-title'> Transform your Space with our <span>Professional Painting Service</span></h1>
-                    <p> Bring new life to your home or business with our professional 
-                        painting services. From color consultations
-                        to the final coat, we’re here to make your vision a reality. Get a free
-                        estimate today and let us transform your space!
+                    <h1 className='section-title'> Sparkling Clean Spaces Made Easy: <span> Professional Cleaning Services </span> Tailored to Your Needs </h1>
+                    <p>  We specialize in residential and commercial cleaning, offering deep cleans, move-in/move-out services, and regular maintenance to keep your space spotless.
                     </p>
                 </div>
 
                 <div className="button-group">
                     <a href="#contact"><button> Get Free Estimate </button></a>
-                </div>
-                
-                <div className="paint-logos">
-                    <img src={sw} alt="" />
-                    <img src={bm} alt="" />
-                    <img src={behr} alt="" />
-                </div>
+                </div>            
             </div>
 
             <div className="column video-column">
-                <video muted autoPlay loop playsInline>
+                <video muted autoPlay loop>
                     <source src="https://oscargomez-webportfolio.s3.us-east-1.amazonaws.com/painting-hero.mp4" />  
                 </video>
             </div>
         </div>
 
         <div className="list-container card">
-            <h1 className='section-subtitle'> Efficient and <span>Cost Effective Painting Services</span></h1>
+            <h1 className='section-subtitle'> An overview of our Cleaning Services:</h1>
             <div className="painting-list">
                 <div className="item-card">
-                    <MdOutlineSensorDoor size="100" />
-                    <h2> Door & Trim </h2>
+                    <IoHomeOutline size="100" />
+                    <h2> Residential Cleaning </h2>
                     <p> Whether refreshing worn surfaces or adding a
                         stylish touch, we deliver smooth, flawless finishes that enhance
                         durability and beauty. Get a Free Estimate.
@@ -163,24 +152,24 @@ export const Painting = () => {
                 </div>
 
                 <div className="item-card">
-                    <PiWall size="100"/>
-                    <h2> Walls & Ceiling </h2>
+                    <MdCleaningServices size="100"/>
+                    <h2> Deep Cleaning </h2>
                     <p> From bold colors to subtle tones, we create a flawless finish that
                         brings your vision to life. Perfectly applied paint, smooth
                         surfaces, and a refreshed ambiance.
                     </p>
                 </div>
                 <div className="item-card">
-                    <GiWoodBeam size="100" />
-                    <h2>Crown Molding & Baseboard</h2>
+                    <FaPeopleCarryBox size="100" />
+                    <h2>Move-in/Move Out</h2>
                     <p>Add elegance to your home with our crown molding and baseboard
                         painting services. We ensure clean lines, smooth finishes, and
                         meticulous attention to detail.
                     </p>
                 </div>
                 <div className="item-card">
-                    <IoHomeOutline size="100"/>
-                    <h2> Complete Exterior  </h2>
+                    <HiOutlineOfficeBuilding  size="100"/>
+                    <h2> Commercial Cleaning </h2>
                     <p>Using high-quality paints and expert techniques,
                     we deliver durable finishes that withstand the elements while
                     enhancing your property's beauty. 
@@ -192,7 +181,7 @@ export const Painting = () => {
             <div className="color-consultation">
                 <h2> Ready but struggling with the colors, sheen, and shades? </h2>
                 <p> We provide expert guidance to bring your vision to life. Get your free Color Consultation + Free Estimate. </p>
-                <a href="tel:+2397773713"><button> Call Now </button></a>
+                <a href="tel:+17867507518"><button> Call Now </button></a>
             </div>
         </div>
 
