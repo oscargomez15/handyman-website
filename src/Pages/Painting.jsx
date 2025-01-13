@@ -192,7 +192,7 @@ export const Painting = () => {
             <div className="color-consultation">
                 <h2> Ready but struggling with the colors, sheen, and shades? </h2>
                 <p> We provide expert guidance to bring your vision to life. Get your free Color Consultation + Free Estimate. </p>
-                <a href="tel:+2397773713"><button> Call Now </button></a>
+                <a href="tel:2397773713"><button> Call Now </button></a>
             </div>
         </div>
 

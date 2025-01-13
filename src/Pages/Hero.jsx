@@ -30,7 +30,7 @@ export const Hero = () => {
               className='mb-cta'
               initial={{scale:1}}
               animate={{scale:[1,1.1,1]}}
-              transition={{duration:1, repeat:Infinity}}><a href="tel:7867507518" tabIndex='0'>Call Now:<br/> (239)777-3713</a></motion.h2>
+              transition={{duration:1, repeat:Infinity}}><a href="tel:2397773713" tabIndex='0'>Call Now:<br/> (239)777-3713</a></motion.h2>
           </div>
       </div>
     </section>
