@@ -137,9 +137,9 @@ export const Painting = () => {
                 </div>
                 
                 <div className="paint-logos">
-                    <img src={sw} alt="" />
-                    <img src={bm} alt="" />
-                    <img src={behr} alt="" />
+                    <img src="https://oscargomez-webportfolio.s3.us-east-1.amazonaws.com/sw-logo.png" alt="" />
+                    <img src="https://oscargomez-webportfolio.s3.us-east-1.amazonaws.com/bm-logo.webp" alt="" />
+                    <img src="https://oscargomez-webportfolio.s3.us-east-1.amazonaws.com/behr-logo.png" alt="" />
                 </div>
             </div>
 
