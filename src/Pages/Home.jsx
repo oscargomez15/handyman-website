@@ -11,7 +11,6 @@ import { Footer } from '../Components/Footer'
 export const Home = () => {
   return (
     <div className='home-page'>
-        <Hamburger/>
         <Hero/>
         <Services/>
         <OurWork/>

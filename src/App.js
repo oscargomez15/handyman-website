@@ -6,11 +6,13 @@ import { Navigation } from './Components/Navigation';
 import { Footer } from './Components/Footer';
 import { Cleaning } from './Pages/Cleaning';
 import { NotFound } from './Pages/NotFound';
+import { Hamburger } from './Components/Hamburger';
 function App() {
   return (
     <div className='background-wrapper'>
       <Router>
         <Navigation/>
+        <Hamburger/>
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/painting" element={<Painting />}/>
