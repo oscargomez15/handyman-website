@@ -247,10 +247,6 @@
 }
 
 @media screen and (max-width:1000px) {
-    .page{
-        width: 100%;
-    }
-
     .column .paint-logos{
         gap: 1rem;
         flex-direction: row;
