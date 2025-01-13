@@ -198,6 +198,10 @@
     }
 }
 @media screen and (max-width:1380px) {
+    .page{
+        width: 100%;
+    }
+
     .section-subtitle{
         padding: 4rem 0 ;
         text-align: center;
@@ -262,22 +266,20 @@
 @media screen and (max-width:750px) {
     .landing-hero{
         flex-direction: column;
-        height: fit-content;
+        height: 100vh;
     }
 
     .column{
         width: 100%;
     }
 
-    video{
-        object-fit: cover;
-        height: auto;
-        max-width: 100%;
-        max-height: 100%;
+    .column .column-sub{
+        margin-top: 0;
     }
+
     .video-column video{
-        height: 100%;
         width: 100%;
+        object-fit: cover;
     }
 
     .painting-list{
@@ -288,9 +290,30 @@
         width: 50%;
     }
 
-
+    .column .paint-logos{
+        display: none;
+    }
 
     .color-consultation{
         width: 100% ;
+    }
+}
+@media screen and (max-width:426px) {
+    .section-title{
+        font-size: 2.5rem;
+    }
+
+    .column .column-sub h1{
+        line-height: 2.5rem;
+    }
+
+    .column .column-sub p{
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .landing-hero{
+        padding: 1rem;
     }
 }
