@@ -42,7 +42,7 @@ export const Navigation = () => {
                 <li> <a href="/cleaning"> <MdOutlineCleaningServices/> Residential Cleaning  </a></li>
                 <li> <a href=""> <MdOutlineWindow/> Window Cleaning</a>  </li>
                 <li> <a href=""> <MdOutlineWaterDrop/> Pressure Wash</a>  </li>
-                <li> <a href="/paint"> <MdOutlineFormatPaint/> Painting </a> </li>
+                <li> <a href="/painting"> <MdOutlineFormatPaint/> Painting </a> </li>
                 <li> <a href=""> <MdOutlinePlumbing/> Plumbing </a> </li>
                 <li> <a href=""> <MdOutlineElectricalServices/> Electrical </a> </li>
                 <li> <a href=""> <MdOutlineHomeRepairService/> Drywall </a> </li>
