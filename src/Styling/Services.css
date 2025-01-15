@@ -8,10 +8,16 @@
     align-items: center;
     justify-content: space-between;
   } */
-  
   .sub-heading{
-    font-size: 2rem;
     padding-inline: 0.75rem;
+  }
+  
+  .sub-heading h1{
+    font-size: 2rem;
+  }
+
+  .sub-heading p{
+    font-size: 1rem;
   }
   
   .sub-heading span{

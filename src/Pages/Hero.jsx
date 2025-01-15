@@ -17,7 +17,7 @@ export const Hero = () => {
             className='heading'
             initial={{scale:0.5}}
             whileInView={{scale:1}}
-            transition={{duration:1}}><span>Providing Professional Handyman Services</span> in Lee and Collier County. </motion.h1>
+            transition={{duration:1}}>Professional <span> Handyman & Painting Services</span> in Lee & Collier County </motion.h1>
             <motion.p
             initial={{opacity:0}}
             whileInView={{opacity:1}}
@@ -26,7 +26,7 @@ export const Hero = () => {
               <a href="#contact"><button tabIndex='-1' className='quote-btn'>FREE ESTIMATES</button></a>
               <a href="#services"><button tabIndex='-1' className='learn-more-btn'>VIEW SERVICES</button></a>
               </div>
-              <motion.h2 
+              <motion.h2
               className='mb-cta'
               initial={{scale:1}}
               animate={{scale:[1,1.1,1]}}
