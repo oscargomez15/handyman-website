@@ -11,6 +11,7 @@
   
   .sub-heading{
     font-size: 2rem;
+    padding-inline: 0.75rem;
   }
   
   .sub-heading span{

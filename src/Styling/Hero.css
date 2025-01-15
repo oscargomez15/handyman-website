@@ -17,6 +17,7 @@
   .hero-page{
     width: 100%;
     position: relative;
+    padding: 0;
   }
 
   .hero-page::after{
@@ -268,7 +269,7 @@
       }
 
       .text-container{
-        gap: 0.5rem;
+        gap: 2rem;
         width: 90%;
       }
 
