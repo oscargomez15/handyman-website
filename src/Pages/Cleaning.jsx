@@ -134,7 +134,7 @@ export const Cleaning = () => {
 
             <div className="column video-column">
                 <video muted autoPlay loop>
-                    <source src="https://oscargomez-webportfolio.s3.us-east-1.amazonaws.com/painting-hero.mp4" />  
+                    <source src="https://oscargomez-webportfolio.s3.us-east-1.amazonaws.com/cleaning.MP4" />  
                 </video>
             </div>
         </div>
@@ -145,43 +145,35 @@ export const Cleaning = () => {
                 <div className="item-card">
                     <IoHomeOutline size="100" />
                     <h2> Residential Cleaning </h2>
-                    <p> Whether refreshing worn surfaces or adding a
-                        stylish touch, we deliver smooth, flawless finishes that enhance
-                        durability and beauty. Get a Free Estimate.
+                    <p> Enjoy a tidy and comfortable home with our tailored residential cleaning services. We focus on every detail to maintain a clean and inviting living space.
                     </p>
                 </div>
 
                 <div className="item-card">
                     <MdCleaningServices size="100"/>
                     <h2> Deep Cleaning </h2>
-                    <p> From bold colors to subtle tones, we create a flawless finish that
-                        brings your vision to life. Perfectly applied paint, smooth
-                        surfaces, and a refreshed ambiance.
+                    <p> Refresh your space with our thorough deep cleaning services. We tackle every corner to eliminate dirt, dust, and grime for a spotless home or workplace.
                     </p>
                 </div>
                 <div className="item-card">
                     <FaPeopleCarryBox size="100" />
                     <h2>Move-in/Move Out</h2>
-                    <p>Add elegance to your home with our crown molding and baseboard
-                        painting services. We ensure clean lines, smooth finishes, and
-                        meticulous attention to detail.
+                    <p>Ensure a spotless transition with our detailed move-in and move-out cleaning. We’ll leave your space pristine and ready for its next chapter.
                     </p>
                 </div>
                 <div className="item-card">
                     <HiOutlineOfficeBuilding  size="100"/>
                     <h2> Commercial Cleaning </h2>
-                    <p>Using high-quality paints and expert techniques,
-                    we deliver durable finishes that withstand the elements while
-                    enhancing your property's beauty. 
+                    <p>Keep your business shining with our reliable commercial cleaning services. From offices to retail spaces, we ensure a clean and professional environment.
                     </p>
                 </div>
 
             </div>
 
             <div className="color-consultation">
-                <h2> Ready but struggling with the colors, sheen, and shades? </h2>
-                <p> We provide expert guidance to bring your vision to life. Get your free Color Consultation + Free Estimate. </p>
-                <a href="tel:+17867507518"><button> Call Now </button></a>
+                <h2> Ready to Experience a Cleaner Space? </h2>
+                <p> Let us transform your home or business with our professional cleaning services tailored to your needs. Contact us today for a free quote and take the first step toward a spotless environment! </p>
+                <a href="tel:+12397773713"><button> Call Now </button></a>
             </div>
         </div>
 
