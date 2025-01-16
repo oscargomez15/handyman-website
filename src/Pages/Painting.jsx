@@ -1,10 +1,5 @@
 import React from 'react'
-import { Navigation } from '../Components/Navigation'
 import '../Styling/Painting.css'
-import paintingVideo from '../Assets/painting-hero.mp4'
-import sw from '../Assets/sw-logo.png'
-import bm from '../Assets/bm-logo.webp'
-import behr from '../Assets/behr-logo.png'
 import { MdOutlineSensorDoor} from "react-icons/md"
 import { IoHomeOutline } from "react-icons/io5";
 import { GiWoodBeam } from "react-icons/gi";

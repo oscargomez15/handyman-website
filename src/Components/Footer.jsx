@@ -25,20 +25,18 @@ export const Footer = () => {
             </ul>
           </div>
 
-          <div className="socials footer-section">
-            <p className='phone-contact'>
-              <h2>Contact</h2>
-              <span>Phone: </span> <a href='tel:+12397773713'>(239)777-3713</a> <br/>
-              <span>Email: </span><a href="email:gialservices@gmail.com">contact@gialservices.com</a>
-              <span> Hablamos Español</span>
-            </p>
-
-
-              <ul className='footer-list'>
+          <div className="footer-section">
+            <ul className='footer-list'>
+              <h2 className='phone-contact'> Contact </h2>
+              <li className='footer-heading'> Phone </li>
+              <li> <a href='tel:+12397773713'>(239)777-3713</a> </li>
+              <li className='footer-heading'> Email </li>
+              <li> <a href="email:gialservices@gmail.com">contact@gialservices.com</a> </li>
+              <li className='footer-heading'>Hablamos Español </li>
               <li>
-                <a href="https://www.facebook.com/GIALServices/" aria-label='visit our facebook page' target='_blank' rel='noreferrer'> <AiOutlineFacebook size="md"/> </a>
+                <a href="https://www.facebook.com/GIALServices/" aria-label='visit our facebook page' target='_blank' rel='noreferrer' className='socials-icon'> <AiOutlineFacebook size="md"/> </a>
               </li>
-              <li><a href="https://maps.app.goo.gl/nScSNDEyUSUgrR8q9" aria-label='visit our google page'target='_blank' rel='noreferrer'>
+              <li><a href="https://maps.app.goo.gl/nScSNDEyUSUgrR8q9" aria-label='visit our google page'target='_blank' rel='noreferrer' className='socials-icon'>
                 <IoLogoGoogle size="md"/></a>
               </li>
             </ul>

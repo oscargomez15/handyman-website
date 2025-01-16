@@ -1,9 +1,7 @@
 import React from 'react'
-import { Navigation } from '../Components/Navigation'
 import '../Styling/Painting.css'
 import { IoHomeOutline } from "react-icons/io5";
 import { MdCleaningServices } from "react-icons/md";
-import { PiWall } from "react-icons/pi";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { Contact } from './Contact'
 import { HiOutlineOfficeBuilding } from "react-icons/hi";
@@ -13,96 +11,72 @@ import { FaPeopleCarryBox } from "react-icons/fa6";
 export const Cleaning = () => {
     const generalQuestions = [
         {
-            question: "What types of painting services do you offer?",
-            answer: "We provide interior and exterior painting, including walls, ceilings, doors, trim, crown molding, and baseboards."
+            question: "What areas do you serve?",
+            answer: "We proudly serve Cape Coral, Fort Myers, Port Charlotte, and surrounding areas."
         },
         {
-            question: "Do you offer free estimates?",
-            answer: "Yes, we offer free, no-obligation estimates for all painting projects."
-        },
-        {
-            question: "What areas do you service?",
-            answer: "We serve Cape Coral, Fort Myers, Estero, Naples, Bonita Springs and the surrounding regions. Contact us to confirm if we cover your location."
-        },
-        {
-            question: "What kind of paint do you use?",
-            answer: "We use high-quality, durable paints from trusted brands to ensure a long-lasting finish."
-        },
-        {
-            question: "Do you offer color consultation?",
-            answer: "Yes, our experts can help you choose the perfect colors for your space based on your style and preferences."
+            question: "Do I need to provide cleaning supplies and equipment?",
+            answer: "No, we bring all the necessary cleaning supplies and equipment. If you have specific preferences, let us know!"
         }
     ];
 
-    const preparationAndProcessQuestions = [
+    const serviceSpecificQuestions = [
         {
-            question: "How do you prepare the surfaces before painting?",
-            answer: "We clean, sand, and prime surfaces to ensure a smooth and long-lasting finish."
+            question: "What is included in a deep cleaning service?",
+            answer: "Deep cleaning focuses on those hard-to-reach or often-overlooked areas, such as baseboards, blinds, behind appliances, and grout cleaning."
         },
         {
-            question: "Do I need to move my furniture before painting?",
-            answer: "We recommend clearing the area, but our team can help move furniture and cover items to protect them."
+            question: "What’s included in move-in/move-out cleaning?",
+            answer: "This service includes a thorough cleaning of the entire property, including cabinets, appliances, walls, and floors, ensuring it's ready for new occupants."
         },
         {
-            question: "Will you fix cracks or holes before painting?",
-            answer: "Yes, we repair minor cracks, holes, and imperfections to create a flawless surface."
-        },
-        {
-            question: "How long does the painting process take?",
-            answer: "The timeline varies based on the size and scope of the project. We’ll provide an estimated timeline during the consultation."
-        },
-        {
-            question: "What do I need to do to prepare my home for painting?",
-            answer: "We’ll guide you through preparation steps, including clearing the area and removing wall decor."
+            question: "Do you clean after construction or renovations?",
+            answer: "Yes, we offer post-construction and post-renovation cleaning to remove dust, debris, and residues."
         }
     ];
 
-    const pricingAndPaymentQuestions = [
+    const bookingQuestions = [
         {
-            question: "How much does it cost to paint a room?",
-            answer: "Pricing depends on the size of the room, the type of paint, and the condition of the surfaces. Contact us for a detailed quote."
+            question: "How do I book a cleaning service?",
+            answer: "You can book online through our website or call us directly at (239)777-3713."
         },
         {
-            question: "Do you require a deposit?",
-            answer: "We typically require a deposit to secure your booking. The amount will be outlined in your contract."
+            question: "How far in advance should I schedule?",
+            answer: "We recommend scheduling at least 1-2 weeks in advance to secure your preferred time."
         },
         {
-            question: "What payment methods do you accept?",
-            answer: "We accept cash, check, and debit card. Let us know your preference!"
+            question: "Can I cancel or reschedule my appointment?",
+            answer: "Yes, you can cancel or reschedule up to 24-48 hours before your appointment without any fees."
         }
     ];
 
-    const postPaintingAndMaintenanceQuestions = [
+    const paymentQuestions = [
         {
-            question: "How do I maintain my painted surfaces?",
-            answer: "Regular cleaning with a damp cloth and avoiding harsh chemicals will help maintain the finish."
+            question: "How much does your cleaning service cost?",
+            answer: "Our pricing depends on the size of your property and the type of service. Contact us for a free quote!"
         },
         {
-            question: "Do you offer a warranty on your work?",
-            answer: "Yes, we stand by our work and offer a warranty for your peace of mind."
+            question: "What forms of payment do you accept?",
+            answer: "We accept cash, credit/debit cards, and online payments."
         },
         {
-            question: "Will you clean up after the project is finished?",
-            answer: "Absolutely! We leave your space clean and tidy, removing all painting materials and waste."
+            question: "Do you offer discounts for recurring services?",
+            answer: "Yes, we provide discounts for weekly, bi-weekly, and monthly cleaning schedules."
         }
     ];
 
-    const customRequestsAndSpecialProjectsQuestions = [
+    const miscellaneousQuestions = [
         {
-            question: "Can you match a specific paint color?",
-            answer: "Color matching in most cases will not achieve the desired results due to fading of the existing color. We recommend repainting the complete area instead of matching."
+            question: "What happens if I’m not satisfied with the cleaning?",
+            answer: "Your satisfaction is our priority. If you're not happy with our work, let us know within 24 hours, and we'll make it right!"
         },
         {
-            question: "Do you paint commercial properties?",
-            answer: "Yes, we offer painting services for both residential and commercial properties."
+            question: "Do I need to be home during the cleaning?",
+            answer: "No, you don’t need to be home. Many of our clients provide access to their property, and we ensure your home is secure at all times."
         },
         {
-            question: "Can you work on textured walls or unique surfaces?",
-            answer: "Yes, we have experience with textured walls, wood, metal, and other unique surfaces."
-        },
-        {
-            question: "Do you offer eco-friendly paint options?",
-            answer: "Yes, we provide low-VOC and eco-friendly paint options for environmentally conscious customers."
+            question: "Do you offer gift cards for your services?",
+            answer: "Yes, we offer gift cards that make a perfect gift for friends and family in need of a cleaning service!"
         }
     ];
 
@@ -128,13 +102,13 @@ export const Cleaning = () => {
                 </div>
 
                 <div className="button-group">
-                    <a href="#contact"><button> Get Free Estimate </button></a>
+                    <a href="/#contact"><button> Get Free Estimate </button></a>
                 </div>            
             </div>
 
             <div className="column video-column">
-                <video muted autoPlay loop>
-                    <source src="https://oscargomez-webportfolio.s3.us-east-1.amazonaws.com/cleaning.MP4" />  
+                <video muted autoPlay loop playsInline>
+                    <source src="https://oscargomez-webportfolio.s3.us-east-1.amazonaws.com/cleaning.MP4"/>  
                 </video>
             </div>
         </div>
@@ -202,11 +176,11 @@ export const Cleaning = () => {
 
                 <div className="questions-container">
                     <div className="questions-title accordion" onClick={toggleAccordion}>
-                        <h2>Preparation and Process </h2>
+                        <h2>Service-Specific</h2>
                         <MdKeyboardArrowDown size="30"/> 
                     </div>
                     <ol className='questions-list panel'>
-                        {preparationAndProcessQuestions.map((item, id) => {
+                        {serviceSpecificQuestions.map((item, id) => {
                             return (
                             <li className='question-item'>
                                 <p className='question'>{item.question}</p>
@@ -219,11 +193,11 @@ export const Cleaning = () => {
 
                 <div className="questions-container">
                     <div className="questions-title accordion" onClick={toggleAccordion}>
-                        <h2>Pricing and Payment </h2>
+                        <h2>Booking and Scheduling</h2>
                         <MdKeyboardArrowDown size="30"/>
                     </div>
                     <ol className='questions-list panel'>
-                        {pricingAndPaymentQuestions.map((item, id) => {
+                        {bookingQuestions.map((item, id) => {
                             return (
                             <li className='question-item'>
                                 <p className='question'>{item.question}</p>
@@ -236,11 +210,11 @@ export const Cleaning = () => {
 
                 <div className="questions-container">
                     <div className="questions-title accordion" onClick={toggleAccordion}>
-                        <h2>Post-Paint and Maintenance</h2>
+                        <h2>Payment and Pricing</h2>
                         <MdKeyboardArrowDown size="30"/>
                     </div>
                     <ol className='questions-list panel'>
-                        {postPaintingAndMaintenanceQuestions.map((item, id) => {
+                        {paymentQuestions.map((item, id) => {
                             return (
                             <li className='question-item'>
                                 <p className='question'>{item.question}</p>
@@ -253,11 +227,11 @@ export const Cleaning = () => {
 
                 <div className="questions-container">
                     <div className="questions-title accordion" onClick={toggleAccordion}>
-                        <h2>Custom Request</h2>
+                        <h2>Miscellaneous</h2>
                         <MdKeyboardArrowDown size="30"/>
                     </div>
                     <ol className='questions-list panel'>
-                        {customRequestsAndSpecialProjectsQuestions.map((item, id) => {
+                        {miscellaneousQuestions.map((item, id) => {
                             return (
                             <li className='question-item'>
                                 <p className='question'>{item.question}</p>
