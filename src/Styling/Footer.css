@@ -13,7 +13,15 @@ footer{
 
   .footer-content{
     display: flex;
-    justify-content: space-around;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  
+  .footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 
   .footer-info{
@@ -30,7 +38,7 @@ footer{
     align-items: center;
     justify-content: center;
     z-index: 2;
-    flex: 1 1 0;
+    flex: 1;
   }
   
   .footer-list li{
@@ -44,7 +52,7 @@ footer{
     display: inline-block;
   }
   
-  .socials-icon svg{
+  .socials ul li svg{
     max-width: 50px;
     max-height: 50px;
   }
@@ -85,6 +93,9 @@ footer{
   }
 
   @media screen and (max-width:1380px) {
+    ul li{
+      margin-right: 0;
+    }
     footer{
         gap: 2rem 0;
         width: 100%;
@@ -94,6 +105,11 @@ footer{
       .footer-section{
         width: 100%;
         padding-left: 1rem;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .footer-list{
         display: flex;
         flex-direction: column;
       }
@@ -119,11 +135,6 @@ footer{
         width: 100%;
       }
 
-      .footer-list{
-        width: 100%;
-      }
-  
-
       .footer-logo{
         display: flex;
         align-items: center;
@@ -141,6 +152,24 @@ footer{
 
       .footer-list .footer-heading{
         font-weight: bold;
+      }
+
+      .footer-list li svg{
+        max-width: 50px;
+        max-height: 50px;
+      }
+
+      .socials-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+      }
+
+      .socials-wrapper a svg{
+        max-width: 40px;
+        max-height: 40px;
+        color: white;
       }
   }
 

@@ -8,7 +8,7 @@ export const Footer = () => {
   return (
     <footer>
       <div className="footer-content">
-        <div className="footer-logo">
+        <div className="footer-logo footer-section">
           <img src={logo} alt="logo" loading='lazy' height="250px"/>
         </div>
         {/* Footer to be displayed only on screens less than 1380px*/}
@@ -33,12 +33,6 @@ export const Footer = () => {
               <li className='footer-heading'> Email </li>
               <li> <a href="email:gialservices@gmail.com">contact@gialservices.com</a> </li>
               <li className='footer-heading'>Hablamos Español </li>
-              <li>
-                <a href="https://www.facebook.com/GIALServices/" aria-label='visit our facebook page' target='_blank' rel='noreferrer' className='socials-icon'> <AiOutlineFacebook size="md"/> </a>
-              </li>
-              <li><a href="https://maps.app.goo.gl/nScSNDEyUSUgrR8q9" aria-label='visit our google page'target='_blank' rel='noreferrer' className='socials-icon'>
-                <IoLogoGoogle size="md"/></a>
-              </li>
             </ul>
           </div>
         </div>
@@ -76,6 +70,11 @@ export const Footer = () => {
         <div className="footer-icon">
           <IoIosHammer size="lg"/>
         </div>
+      </div>
+
+      <div className='socials-wrapper'>
+        <a href="https://www.facebook.com/GIALServices/" aria-label='visit our facebook page' target='_blank' rel='noreferrer' className='socials-icon'> <AiOutlineFacebook size="md"/> </a>
+        <a href="https://maps.app.goo.gl/nScSNDEyUSUgrR8q9" aria-label='visit our google page'target='_blank' rel='noreferrer' className='socials-icon'> <IoLogoGoogle size="md"/></a>
       </div>
 
       <p className='copyright'>Copyright 2024. Website designed by Oscar Gomez.</p>
