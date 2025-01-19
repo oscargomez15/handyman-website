@@ -12,7 +12,7 @@
 .card{
     height: 100%;
     border-radius: 10px;
-    padding: 6rem 4rem 0rem 4rem;
+    padding: 6rem 4rem 6rem 4rem;
     background-color: rgb(242, 243, 243);
 }
 
@@ -46,20 +46,6 @@
     align-items: center;
     align-self: self-start;
     width: 100%;
-}
-
-.column .paint-logos{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    flex: 1;
-}
-
-.column .paint-logos img{
-    max-width: 100%;
-    object-fit: contain;
-    width: 175px;
 }
 
 .column video{
@@ -270,35 +256,8 @@
     .column .column-sub p{
         font-size: 1rem;
     }
-    .column .paint-logos img{
-        height: 50px;
-    }
-    
-    .column .paint-logos{
-        gap: .5rem;
-        align-items: center;
-    }
 }
 
-@media screen and (max-width:1350px) {
-    .column .paint-logos{
-        flex-direction: column;
-    }
-}
-
-
-@media screen and (max-width:1200px) {
-    .column .paint-logos{
-        gap: 1rem;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .column .paint-logos img{
-        width: 100px;
-        object-fit: contain;
-    }
-}
 
 @media screen and (max-width:768px) {
     .landing-hero{
@@ -343,10 +302,6 @@
 
     .column .column-sub p{
         margin-top: 1rem;
-    }
-
-    .column .paint-logos img, .paint-logos{
-        display: none;
     }
 }
 

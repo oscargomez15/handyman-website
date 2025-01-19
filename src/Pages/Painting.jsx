@@ -133,12 +133,6 @@ export const Painting = () => {
                 <div className="button-group">
                     <a href="#contact"><button> Get Free Estimate </button></a>
                 </div>
-                
-                <div className="paint-logos">
-                    <img src="https://oscargomez-webportfolio.s3.us-east-1.amazonaws.com/sw-logo.png" alt="" />
-                    <img src="https://oscargomez-webportfolio.s3.us-east-1.amazonaws.com/bm-logo.webp" alt="" />
-                    <img src="https://oscargomez-webportfolio.s3.us-east-1.amazonaws.com/behr-logo.png" alt="" />
-                </div>
             </div>
 
             <div className="column video-column">
