@@ -95,6 +95,9 @@ export const Cleaning = () => {
     <section className='page'>
         <div className='landing-hero'>
             <div className="column card">
+            <video muted autoPlay loop playsInline className='overlay-video'>
+                    <source src="https://oscargomez-webportfolio.s3.us-east-1.amazonaws.com/cleaning.MP4"/>  
+                </video>
                 <div className="column-sub">
                     <h1 className='section-title'> Sparkling Clean Spaces Made Easy: <span> Professional Cleaning Services </span> Tailored to Your Needs </h1>
                     <p>  We specialize in residential and commercial cleaning, offering deep cleans, move-in/move-out services, and regular maintenance to keep your space spotless.
@@ -107,7 +110,7 @@ export const Cleaning = () => {
             </div>
 
             <div className="column video-column">
-                <video muted autoPlay loop playsInline>
+                <video muted autoPlay loop playsInline className='video-desktop'>
                     <source src="https://oscargomez-webportfolio.s3.us-east-1.amazonaws.com/cleaning.MP4"/>  
                 </video>
             </div>
