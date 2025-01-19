@@ -67,6 +67,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+    filter: brightness(0.8);
 }
 
 .video-column{
@@ -202,6 +203,9 @@
     }
 }
 @media screen and (max-width:1380px) {
+    .video-column{
+        display: none;
+    }
 
     .overlay-video{
         display: block;
@@ -219,6 +223,7 @@
     }
 
     .column{
+        width: 100%;
         position: relative;
         display: flex;
         align-items: center;
@@ -280,7 +285,8 @@
     }
 }
 
-@media screen and (max-width:1000px) {
+
+@media screen and (max-width:1200px) {
     .column .paint-logos{
         gap: 1rem;
         flex-direction: row;
