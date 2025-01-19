@@ -92,6 +92,10 @@ footer{
     color: #a7a7a7;
   }
 
+  .socials-wrapper a svg{
+    display: none;
+  }
+
   @media screen and (max-width:1380px) {
     ul li{
       margin-right: 0;
@@ -167,6 +171,7 @@ footer{
       }
 
       .socials-wrapper a svg{
+        display: block;
         max-width: 40px;
         max-height: 40px;
         color: white;
