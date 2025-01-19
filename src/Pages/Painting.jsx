@@ -131,7 +131,7 @@ export const Painting = () => {
                 </div>
 
                 <div className="button-group">
-                    <a href="#contact"><button> Get Free Estimate </button></a>
+                    <a href="/painting/#contact"><button> Get Free Estimate </button></a>
                 </div>
             </div>
 

@@ -99,13 +99,13 @@ export const Cleaning = () => {
                     <source src="https://oscargomez-webportfolio.s3.us-east-1.amazonaws.com/cleaning.MP4"/>  
                 </video>
                 <div className="column-sub">
-                    <h1 className='section-title'> Sparkling Clean Spaces Made Easy: <span> Professional Cleaning Services </span> Tailored to Your Needs </h1>
+                    <h1 className='section-title'><span> Professional Cleaning Services </span> Tailored to Your Needs </h1>
                     <p>  We specialize in residential and commercial cleaning, offering deep cleans, move-in/move-out services, and regular maintenance to keep your space spotless.
                     </p>
                 </div>
 
                 <div className="button-group">
-                    <a href="/#contact"><button> Get Free Estimate </button></a>
+                    <a href="/cleaning/#contact"><button> Get Free Estimate </button></a>
                 </div>            
             </div>
 
