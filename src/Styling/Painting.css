@@ -1,3 +1,7 @@
+.overlay-video{
+    display: none;
+}
+
 .landing-hero{
     padding-top: 156px;
     height: 100vh;
@@ -198,6 +202,33 @@
     }
 }
 @media screen and (max-width:1380px) {
+
+    .overlay-video{
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        top: 0;
+        z-index: 0;
+        opacity: 0.5;
+    }
+
+    .video-desktop{
+        display: none;
+    }
+
+    .column{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .column-sub, .button-group{
+        z-index: 2;
+    }
+
     .page{
         padding: 2rem 0 4rem 0;
         width: 100%;
@@ -218,6 +249,8 @@
 
     .landing-hero{
         padding: 2rem ;
+        align-items: center;
+        gap: 0;
         height: 100vh;
     }
 
@@ -263,7 +296,6 @@
 @media screen and (max-width:768px) {
     .landing-hero{
         flex-direction: column;
-        height: 100vh;
     }
 
     .column{

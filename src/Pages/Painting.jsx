@@ -118,6 +118,9 @@ export const Painting = () => {
     <section className='page'>
         <div className='landing-hero'>
             <div className="column card">
+            <video muted autoPlay loop playsInline className='overlay-video'>
+                    <source src="https://oscargomez-webportfolio.s3.us-east-1.amazonaws.com/painting-hero.mp4" />  
+                </video>
                 <div className="column-sub">
                     <h1 className='section-title'> Transform your Space with our <span>Professional Painting Service</span></h1>
                     <p> Bring new life to your home or business with our professional 
@@ -139,7 +142,7 @@ export const Painting = () => {
             </div>
 
             <div className="column video-column">
-                <video muted autoPlay loop playsInline>
+                <video muted autoPlay loop playsInline className='video-desktop'>
                     <source src="https://oscargomez-webportfolio.s3.us-east-1.amazonaws.com/painting-hero.mp4" />  
                 </video>
             </div>
