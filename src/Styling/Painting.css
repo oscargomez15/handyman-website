@@ -67,7 +67,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    filter: brightness(0.8);
+    filter: brightness(0.6);
 }
 
 .video-column{
@@ -273,6 +273,7 @@
     .column .paint-logos img{
         height: 50px;
     }
+    
     .column .paint-logos{
         gap: .5rem;
         align-items: center;
@@ -302,6 +303,9 @@
 @media screen and (max-width:768px) {
     .landing-hero{
         flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .column{
@@ -312,9 +316,8 @@
         margin-top: 0;
     }
 
-    .video-column video{
-        width: 100%;
-        object-fit: cover;
+    .video-column{
+        display: none;
     }
 
     .painting-list{
@@ -323,10 +326,6 @@
 
     .item-card{
         width: 50%;
-    }
-
-    .column .paint-logos{
-        display: none;
     }
 
     .color-consultation{
@@ -344,6 +343,10 @@
 
     .column .column-sub p{
         margin-top: 1rem;
+    }
+
+    .column .paint-logos img, .paint-logos{
+        display: none;
     }
 }
 
