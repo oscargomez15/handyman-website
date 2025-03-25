@@ -1,5 +1,5 @@
 import React from 'react'
-import handyman from '../Assets/handyman.jpg'
+import heroImage from '../Assets/image-hero-fortmyers.jpeg'
 import logo from '../Assets/gial-alpha.png'
 import { motion } from 'framer-motion';
 
@@ -9,7 +9,7 @@ export const Hero = () => {
 
   return (
     <section className='hero-page page' id='home'>
-    <img src={handyman} alt="man-standing-with-construction-belt" className='background-image' />
+    <img src={heroImage} alt="man-standing-with-construction-belt" className='background-image' />
       <div className="hero-container">
       <img src={logo} alt="gial-services-logo" className='logo-hero-mb' />
           <div className='text-container'>
@@ -17,13 +17,13 @@ export const Hero = () => {
             className='heading'
             initial={{scale:0.5}}
             whileInView={{scale:1}}
-            transition={{duration:1}}>Professional <span> Handyman & Painting Services</span> in Lee & Collier County </motion.h1>
+            transition={{duration:1}}><span> Painting & Home Improvement Services</span> in Lee & Collier County </motion.h1>
             <motion.p
             initial={{opacity:0}}
             whileInView={{opacity:1}}
-            transition={{duration:1}}> Our expert handyman services bring quality craftsmanship to every project in <span>Cape Coral, Fort Myers, Bonita Springs, and Estero</span>. </motion.p>
+            transition={{duration:1}}> Our expert painting and home improvement services bring quality craftsmanship to every project in <span>Cape Coral, Fort Myers, Bonita Springs, Estero, and Naples</span>. Your satisfaction is guaranteed with us. </motion.p>
               <div className="btn-group">
-              <a href="#contact"><button tabIndex='-1' className='quote-btn'>FREE ESTIMATES</button></a>
+              <a href="#contact"><button tabIndex='-1' className='quote-btn'>GET FREE ESTIMATE</button></a>
               <a href="#services"><button tabIndex='-1' className='learn-more-btn'>VIEW SERVICES</button></a>
               </div>
               <motion.h2

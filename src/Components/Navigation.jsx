@@ -12,10 +12,10 @@ export const Navigation = () => {
   const location = useLocation();
   const isPaintingPage = location.pathname !== '/';
 
-  useEffect(() => {
-    // Scroll to top whenever the route changes
-    window.scrollTo(0, 0);
-  }, [location]); 
+  // useEffect(() => {
+  //   // Scroll to top whenever the route changes
+  //   window.scrollTo(0, 0);
+  // }, [location]); 
 
 
   useEffect(()=> {
@@ -50,8 +50,8 @@ export const Navigation = () => {
               </ul>
             </li>
 
-            <li><a href="#gallery">GALLERY</a></li>
-            <li><a href="#reviews">REVIEWS</a></li>
+            <li><a href="/#gallery">GALLERY</a></li>
+            <li><a href="/#reviews">REVIEWS</a></li>
             <li className='contact-nav'><a href="#contact">CONTACT</a></li>
             <li><a href="tel:7867507518"> Free Estimates <br/><FaPhone/> 239-777-3713</a></li>
         </ul>

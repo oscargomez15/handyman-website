@@ -77,7 +77,7 @@ export const Footer = () => {
         <a href="https://maps.app.goo.gl/nScSNDEyUSUgrR8q9" aria-label='visit our google page'target='_blank' rel='noreferrer' className='socials-icon'> <IoLogoGoogle size="md"/></a>
       </div>
 
-      <p className='copyright'>Copyright 2024. Website designed by Oscar Gomez.</p>
+      <p className='copyright'>Copyright 2025. Website designed by Oscar Gomez.</p>
     </footer>
   )
 }
