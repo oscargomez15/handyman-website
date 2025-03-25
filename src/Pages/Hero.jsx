@@ -1,5 +1,5 @@
 import React from 'react'
-import heroImage from '../Assets/image-hero-fortmyers.jpeg'
+import heroImage from '../Assets/image-hero-fortmyers.jpg'
 import logo from '../Assets/gial-alpha.png'
 import { motion } from 'framer-motion';
 
