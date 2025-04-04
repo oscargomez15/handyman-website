@@ -14,6 +14,7 @@ export const Navigation = () => {
 
   // useEffect(() => {
   //   // Scroll to top whenever the route changes
+  //   //but this also triggers when the user clicks on elements in the same page.
   //   window.scrollTo(0, 0);
   // }, [location]); 
 
